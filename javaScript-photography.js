@@ -1,4 +1,4 @@
-
+﻿
     
             
   
@@ -7,10 +7,7 @@
 
 $(document).ready(function(){
     
-    window.onresize = function()
-    {
-    document.location.reload(true);
-    }
+
     
     
     function backgroundDel(){
@@ -134,7 +131,7 @@ $(document).ready(function(){
 
       $slider.on('slide.changed', function() {
      
-        console.log('slide changed !');
+  
         $('.nav-dot').removeClass('active');
 
         var $activeDot = $('.nav-dot[data-slide="'+$('.panel._active').data('slide')+'"]');
@@ -170,7 +167,7 @@ $(document).ready(function(){
          $('*').scroll(function(){
                 var scrollbarLocation = $(this).scrollTop();
                 
-                console.log(scrollbarLocation)
+                //console.log(scrollbarLocation)
             });
         
         
