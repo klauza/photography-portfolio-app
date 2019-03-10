@@ -1,0 +1,135 @@
+/* --------------------- SECTION-5 --------------------- */
+#section-5{
+    font-size: 22px;
+    
+    background: #343434;
+    width: 100%;
+    overflow-y: scroll;
+}
+
+#section-5 .section-content{
+    color: black;
+    /*
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+     */ 
+    background: #fff;
+    width: 100%;
+    padding-left: 9.8%;
+    height: auto;
+    font-family: 'Cabin', sans-serif;
+    
+}
+
+
+
+.section-content__section-1,
+.section-content__section-2,
+.section-content__section-3,
+.section-content__section-4{
+    width: 100%;
+    height: 100vh;
+}
+
+.parallax-p{
+    padding: 20px 50px;
+    height: auto;
+}
+.pimg{
+    max-width: 100%;
+    position: relative;
+    opacity: 0.7; 
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    min-height: 400px;
+}
+.pimg1{
+    max-width: 100%;
+    background: url("./img-photography/section-5/camera-daylight-daytime-898766.jpg");
+   
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 80% 10%;
+    height: 20%;
+}
+.pimg2{
+    background: url("./img-photography/section-5/aperture-blur-camera-1093065.jpg");
+    background-position: 25% 0%;
+    background-attachment: fixed; 
+}
+.pimg3{
+    background: url("./img-photography/section-5/camera-close-up-dusk-1500590.jpg");
+    background-position: 80% 60%;
+    background-attachment: fixed; 
+}
+.pimg4{
+    background: url("./img-photography/section-5/abstract-art-blur-240230.jpg");
+    background-position: 30% 20%;
+    background-attachment: fixed; 
+}
+
+.ptext{
+    position: absolute;
+    top: 50%;
+    width: 80%;
+    text-align: center;
+    color: #fff;
+    font-size: 27px;
+    transform: translateY(-50%);
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+/* padding very bottom */
+
+#section-5 .section-content > div:nth-last-child(1){
+    padding-bottom: 200px;
+}
+
+@media(max-width: 768px){
+    .pimg1, .pimg2, .pimg3, .pimg4{
+        background-attachment: scroll;
+    }
+}
+
+
+.section-content__section-5{
+    width: 100%;
+    max-height: 100vh;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin-top: 150px;
+    padding: 100px;
+}
+.section-content__section-5 img{
+    
+}
+
+
+.section-content__section-5 img:nth-child(2),
+.section-content__section-5 img:nth-child(3){
+   
+    max-height: 300px;
+}
+
+
+.section-5__flickr{
+    margin-top: 75px;
+}
+
+#tipsRules{
+    margin-left: 20px;
+}
+
+#tipsRules div h4{
+    background: #d4d4d4;
+}
+
+#tipsRules div li{
+    margin-left: 60px;
+}
+

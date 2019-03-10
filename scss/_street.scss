@@ -1,0 +1,116 @@
+/* --------------------- SECTION-3 --------------------- */
+#section-3{
+    
+  
+   
+    background: #343434;
+   
+    font-size: 3em;
+}
+
+
+#section-3 .section-content{
+
+    background: #2E2E2E;
+}
+
+.horizontalScroll {
+    width: 100vh;
+    height: 100vw;
+    overflow-y: scrol;
+    overflow-x: hidden;
+    background: #2E2E2E;
+
+    transform-origin: right top;
+    transform: rotate(-90deg) translate3d(0, -100vh, 0);
+
+    padding-top: 350px;
+}
+
+
+.horizontalScroll > * {
+    transform-origin: left top;
+    transform: rotate(90deg) translate3d(25vw, -100vh, 0) skew(-15deg);
+    margin-top: -50%;
+
+}
+.block{
+    display: block;
+    width: 50%;
+    height: 100vh;
+
+    overflow: hidden;
+}
+
+
+
+.block-bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: skew(15deg) scale(1.5);
+
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s;
+    opacity: 0.65;
+}
+
+.block-bg:hover{
+    opacity: 1;
+    transform: skew(15deg) scale(1.625);
+}
+
+.horizontalScroll .block:nth-child(1) .block-bg{
+    background: url(./img-photography/outdoor/outdoor1.jpg);
+    background-size: cover;
+    background-position: 50% 150px;
+    background-repeat: no-repeat;
+}
+.horizontalScroll .block:nth-child(2) .block-bg{
+    background: url(./img-photography/outdoor/outdoor2.jpg);
+    background-size: cover;
+    background-position: 50% 100px;
+    background-repeat: no-repeat;
+    
+}
+.horizontalScroll .block:nth-child(3) .block-bg{
+    background: url(./img-photography/outdoor/outdoor3.jpg);
+    background-size: cover;
+    background-position: 50% 150px;
+    background-repeat: no-repeat;
+}
+.horizontalScroll .block:nth-child(4) .block-bg{
+    background: url(./img-photography/outdoor/outdoor4.jpg);
+    background-size: cover;
+    background-position: 50% 150px;
+    background-repeat: no-repeat;
+}
+.horizontalScroll .block:nth-child(5) .block-bg{
+    background: url(./img-photography/outdoor/outdoor5.jpg);
+    background-size: cover;
+    background-position: 50% 150px;
+    background-repeat: no-repeat;
+}
+.horizontalScroll .block:nth-child(6) .block-bg{
+    background: url(./img-photography/outdoor/outdoor6.jpg);
+    background-size: cover;
+    background-position: 50% 150px;
+    background-repeat: no-repeat;
+}
+.horizontalScroll .block:nth-child(7) .block-bg{
+    background: url(./img-photography/outdoor/outdoor1.jpg);
+    background-size: cover;
+    background-position: 50% 150px;
+    background-repeat: no-repeat;
+}
+.horizontalScroll .block:nth-child(8) .block-bg{
+    background: rgba(0, 0, 0, 0.26);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    display: grid;
+    place-items: center;
+    font-size: 28px;
+}
+

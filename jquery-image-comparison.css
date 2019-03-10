@@ -1,0 +1,72 @@
+/*
+#section-4 img { 
+    max-width: 100%; 
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.comparison {
+	display: inline-block;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	max-width: 80%;
+	z-index: 1;
+}
+.comparison li:last-child {
+	left: 0;
+	height: 100%;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+}
+.comparison ul{
+    
+}
+.comparison li img { 
+    display: block;
+}
+
+.comparison.horizontal { cursor: n-resize; }
+.comparison.vertical { cursor: w-resize; }
+.comparison.horizontal li:last-child img { height: auto; width: 100%; }
+.comparison.vertical li:last-child img { height: 100%; max-width: inherit; }
+*/
+
+.comparison { 
+   transition: width 0.75s ease-in-out;
+}
+
+.comparison {
+	display: inline-block;
+	list-style: none;
+	margin: 0 auto;
+	padding: 0;
+	position: relative;
+	width: 100%;  /* width overall of that element */
+	z-index: 1;
+}
+.comparison li:last-child {
+	left: 0;
+	height: 100%;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+}
+.comparison li img{
+    display: block;
+    max-width: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.comparison.horizontal { cursor: n-resize; }
+.comparison.vertical { cursor: w-resize; width: auto;}
+.comparison.vertical li:last-child img { 
+    height: 100%; 
+    max-width: inherit;  
+}
+
+
+
+

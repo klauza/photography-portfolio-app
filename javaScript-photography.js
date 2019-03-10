@@ -104,7 +104,7 @@ $(document).ready(function(){
 
     $('.page-slider').each(function() {
       var $slider =  $(this);
-      var numberOfSlides = $slider.find('.panel').length;
+      //var numberOfSlides = $slider.find('.panel').length;
 
  
       $slider.find('.panel:eq(0)').addClass('_active'); // po wczytaniu sie strony, daje pierwsza kropke jako aktywną 
