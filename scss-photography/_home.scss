@@ -1,0 +1,41 @@
+/* --------------------- SECTION-1 --------------------- */
+#section-1{
+    overflow: hidden;
+    background: #343434;
+}
+#section-1 .section-content{
+    
+    background: url("./img-photography/main-page.jpg");;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    margin: auto;
+   
+}
+
+#section-1 .section-content div{
+    font-size: 1.2em;
+    position: absolute;
+    top: 16%;
+    left: 25%;
+}
+
+#section-1 img{
+    max-width: 100%;
+    height: auto;
+}
+#section-1 h1{
+    letter-spacing: 3px;
+    font-family: 'Dancing Script', monospace;
+}
+#section-1 h3{
+    margin: 10px;
+}
+
+#section-1 .h1-h3{
+    display: none;
+}

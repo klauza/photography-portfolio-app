@@ -1,0 +1,197 @@
+*, *:before, *:after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}  
+
+// typography
+@import url('https://fonts.googleapis.com/css?family=Cabin|Oswald|Dancing+Script|Permanent+Marker');
+
+
+
+
+
+
+
+
+
+
+html, body {
+    
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100vw;
+    
+    transition: all 1s;
+ 
+    
+}
+.biegie{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: black;
+    z-index: 999;
+    overflow: hidden;
+    visibility: visible;
+}
+.author-info{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #bfa7a7;
+    width: 100px;
+    line-height: 30px;
+    z-index: 99;
+    height: 30px;
+    text-align: center;
+    overflow: hidden;
+    
+    transition: all 0.35s;
+    cursor: default;
+}
+.author-info div{
+    line-height: 30px;
+    text-align: left;
+    margin-left: 3px;
+}
+
+.author-info span{
+    border-bottom: 1px solid black;
+}
+.author-info:hover{
+    width: 185px;
+    height: 120px;
+    background: #bc8282;
+    
+    transition: height 1s, width 0.5s, border-left 1s;
+    border-left: 1px solid white;
+}
+
+
+
+
+.page-slider {
+    position: relative;
+    top: 0;
+    height: 100%;
+    max-width: 100%;
+
+    background: #343434;
+    /* ukrywa tylko width */
+
+    overflow-x: hidden;
+  
+}
+
+.panel {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+        overflow: hidden; /* !!! */
+}
+
+.panel._active { z-index: 10; }
+
+.trans-layer, 
+.section {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+
+.trans-layer {
+    background: #000000;
+    transform: translateY(-200%) skew(0) rotate(0); /*scale(2);*/ /* !!! trans : 200%*/
+    /*border-radius: 50%;*/
+    transition: all 500ms ease-in-out;
+    transition-delay: 500ms;
+}
+
+._active .trans-layer {
+    transform: translateY(0) skew(0) rotate(0); /*scale(2);*/
+    transition-delay: 0ms;
+}
+
+.section {
+    transform: translateY(100%);
+    transition: all 500ms ease-in-out;
+    transition-delay: 0ms;
+    background: #343434;
+  
+   
+}
+
+._active .section {
+    transform: translateY(0);
+    transition-delay: 500ms;
+}
+
+.section-content {/*            !!!!!
+    display: flex;
+    flex-flow: column;
+    align-items: center;*/
+    width: 100%;
+    height: auto;
+    /*justify-content: center;*/
+
+    color: #fff;
+    font-family: arial;
+    text-transform: uppercase;
+
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 500ms ease;
+    transition-delay: 0s;
+  
+}
+
+._active .section-content {
+    opacity: 1;
+    transform: translateY(0px);
+    transition-delay: 1000ms;
+}
+
+
+
+ 
+
+.aktive span{
+    padding: 0 0 0 40px;
+  /*  transform: translateX(25%); */
+}
+
+
+/*        SCROLLBAR        */
+/* width */
+::-webkit-scrollbar {
+    width: 0.5%; 
+}
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}

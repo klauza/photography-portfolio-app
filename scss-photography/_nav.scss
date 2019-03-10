@@ -1,0 +1,65 @@
+/* LEFT NAV DOTS */
+.nav-dots {
+    position: fixed;
+    top: 50%;
+    left: 0.65%;
+    transform: translateY(-50%);
+    z-index: 20;
+    width: 8.5%;
+        height: auto;
+}
+
+.nav-dot {
+    position: relative;
+    left: -500%;
+    width: 100%;
+    height: 2em;
+    margin: 1em auto;
+    border: 1px solid #343434;
+    border-radius: 5px;
+    background: #fff;
+    cursor: pointer;
+        transition: all 500ms cubic-bezier(.24, 1.5, .78, 1.42);
+    font-family: 'Oswald', sans-serif;
+    
+}
+
+.nav-dot span{
+    opacity: 1;
+
+
+    height: 100%;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    text-align: justify;
+
+    transition: all 0.5s;
+}
+
+
+
+  
+
+
+
+
+.nav-dot:hover span{
+    color: white;
+    background: rgba(255, 0, 0, 0.47);
+}
+
+.nav-dot.active{ 
+    background: red; 
+}
+.nav-dot.active span{
+    color: white;
+}
+
+.nav-dots a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: black;
+}
