@@ -10,7 +10,7 @@
  - [ ] Equipment page reworked
  - [ ] \(optional):grey_question: About page added
  <br/>
-
+ 
 # v1.2
  - code has been refactored
  <br/>
@@ -19,4 +19,3 @@
  - added "photos" folder;
  - fixed page resize;
  - changed one photo in Manipulaiton section;
-
