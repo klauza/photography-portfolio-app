@@ -42,7 +42,7 @@ $(document).ready(function(){
         }, 1500);
    
     
-        $(".h1-h3").delay(1500).fadeIn(1000);
+        //$(".h1-h3").delay(1500).fadeIn(1000);
        
    }
     setTimeout(function(){
@@ -104,6 +104,7 @@ $(document).ready(function(){
 
     $('.page-slider').each(function() {
       var $slider =  $(this);
+      console.log($slider);
       //var numberOfSlides = $slider.find('.panel').length;
 
  
