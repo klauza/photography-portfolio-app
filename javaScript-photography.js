@@ -2,14 +2,24 @@
 $(document).ready(function(){
 
 
-    // question mark
-    $('.question-svg').on('click', function(){
-        $('.backDiv').toggleClass("show-backDiv");
-        $(this).toggleClass("swap-q-mark-1");
-        $(this).toggleClass("swap-q-mark-2");
-   
-})
+    // ===============================================================================
+    // QUESTION MARK
+    $(window).on('click', function(e){
+        const backDiv = document.querySelectorAll('.backDiv')[0];
+        
+        if(e.target.closest('.question-svg')){
+            $('.backDiv').toggleClass("show-backDiv");
+            $(".question-svg").toggleClass("swap-q-mark-1");
+            $(".question-svg").toggleClass("swap-q-mark-2");
+        } else if(event.target != backDiv && event.target.parentNode != backDiv && event.target.parentNode.parentNode != backDiv){
+                $('.backDiv').removeClass("show-backDiv");
+                $('.question-svg').removeClass("swap-q-mark-2");
+                $('.question-svg').addClass("swap-q-mark-1");
+        }
+    });
 
+
+    // ===============================================================================
     // SHOWING MENU
     const showMenu = () => {
         $(".nav-dots").css({
@@ -29,7 +39,6 @@ $(document).ready(function(){
 
     
     // ===============================================================================
-    
     // HIDING MENU 
     const hideMenu = () => {
         $(".nav-dots").css({"transform":"translateX(-100px) translateY(-50%)"});
@@ -54,7 +63,7 @@ $(document).ready(function(){
 
 
     
-    function backgroundDel(){
+    const backgroundDel = () => {
         setTimeout(function(){
             var backG = document.getElementsByClassName('biegie')[0];
             backG.classList="";
