@@ -1,6 +1,15 @@
 ﻿
 $(document).ready(function(){
 
+
+    // question mark
+    $('.question-svg').on('click', function(){
+        $('.backDiv').toggleClass("show-backDiv");
+        $(this).toggleClass("swap-q-mark-1");
+        $(this).toggleClass("swap-q-mark-2");
+   
+})
+
     // SHOWING MENU
     const showMenu = () => {
         $(".nav-dots").css({

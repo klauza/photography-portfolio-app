@@ -16,6 +16,7 @@ html, body {
   width: 100vw;
   -webkit-transition: all 1s;
   transition: all 1s;
+  overflow: hidden;
 }
 
 .biegie {
@@ -179,6 +180,67 @@ html, body {
   -webkit-transition: height 1s, width 0.5s, border-left 1s;
   transition: height 1s, width 0.5s, border-left 1s;
   border-left: 1px solid white;
+}
+
+.question-svg {
+  position: absolute;
+  top: 0;
+  right: 0%;
+  height: 35px;
+  width: 35px;
+  z-index: 99;
+  -webkit-transition: all 250ms ease;
+  transition: all 250ms ease;
+}
+
+.question-svg:hover {
+  cursor: pointer;
+}
+
+.question-svg-big {
+  -webkit-transform: scale(1.8);
+          transform: scale(1.8);
+}
+
+.swap-q-mark-1 {
+  background: url(../svg/q-mark.svg);
+}
+
+.swap-q-mark-2 {
+  background: url(../svg/q-mark-exit.svg);
+}
+
+.backDiv {
+  margin: 0 auto;
+  display: none;
+  position: absolute;
+  top: 48px;
+  right: 35px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#c4a601), to(#8a7500));
+  background: linear-gradient(to bottom, #c4a601 0%, #8a7500 100%);
+  height: auto;
+  width: 100px;
+  z-index: 98;
+  border: 1px solid #000;
+}
+
+.backDiv__maintext {
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+}
+
+.backDiv__github, .backDiv__portfolio {
+  padding-left: 3px;
+}
+
+.backDiv__github a, .backDiv__portfolio a {
+  text-decoration: none;
+  color: white;
+}
+
+.show-backDiv {
+  display: block;
 }
 
 /* LEFT NAV DOTS */

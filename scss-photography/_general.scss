@@ -27,7 +27,7 @@ html, body {
     width: 100vw;
     
     transition: all 1s;
- 
+    overflow: hidden;
     
 }
 .biegie{
@@ -178,4 +178,61 @@ html, body {
     
     transition: height 1s, width 0.5s, border-left 1s;
     border-left: 1px solid white;
+}
+
+.question-svg{
+    
+    position: absolute;
+    top: 0;
+    right: 0%;
+    height: 35px;
+    width: 35px;
+    z-index: 99;
+    transition: all 250ms ease;
+    &:hover{
+        cursor: pointer;
+    }
+}
+.question-svg-big{
+    transform: scale(1.8);
+}
+
+
+.swap-q-mark-1{
+    background: url(../svg/q-mark.svg);
+}
+.swap-q-mark-2{
+    background: url(../svg/q-mark-exit.svg);
+}
+.backDiv{
+    margin: 0 auto;
+    display: none;
+    position: absolute;
+    top: 48px;
+    right: 35px;
+    background: linear-gradient(
+        to bottom,
+        rgb(196, 166, 1) 0%,
+        rgb(138, 117, 0) 100%);
+    height: auto;
+    width: 100px;
+    z-index: 98;
+    border: 1px solid #000;
+
+    &__maintext{
+        text-transform: uppercase;
+        font-weight: bold;
+        text-align: center;
+    }
+    &__github,
+    &__portfolio{
+        padding-left: 3px;
+        a{
+            text-decoration: none;
+            color: white;
+        }
+    }
+}
+.show-backDiv{
+    display: block;
 }
