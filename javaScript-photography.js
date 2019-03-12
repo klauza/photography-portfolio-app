@@ -1,105 +1,71 @@
 ﻿
-    
-            
-  
-    
-
-
 $(document).ready(function(){
-    
+
+    // SHOWING MENU
+    const showMenu = () => {
+        $(".nav-dots").css({
+            "transform":"translateX(0) translateY(-50%)"
+        });
+        $("#arrow").css("animation","arrow-anim-forward 0.5s ease forwards");
+        $(".arrow-box").css("animation","arrow-box-forward 0.5s ease forwards");
+        $("#arrow polygon").css({"fill":"#fff"});
+    } 
+       
+
+    $("body").on("mousemove",function(event) {
+        if (event.pageX < 60) {
+            showMenu();
+        }
+    });
 
     
+    // ===============================================================================
+    
+    // HIDING MENU 
+    const hideMenu = () => {
+        $(".nav-dots").css({"transform":"translateX(-100px) translateY(-50%)"});
+        $("#arrow").css("animation","arrow-anim-back 0.5s ease forwards");
+        $(".arrow-box").css("animation","arrow-box-back 0.5s ease forwards");
+        $("#arrow polygon").css({"fill":"rgba(255, 255, 255, 0.3)"});
+    };
+
+    $("#arrow").on('click', function(e){
+        hideMenu();
+    });
+    
+    $('*').scroll(function(){
+        var scrollbarLocation = $(this).scrollTop();
+            
+        //console.log(scrollbarLocation)
+        if (scrollbarLocation > 350){
+            hideMenu();
+        }
+    });
+    // ===============================================================================
+
+
     
     function backgroundDel(){
         setTimeout(function(){
             var backG = document.getElementsByClassName('biegie')[0];
             backG.classList="";
+            showMenu();
         }, 1000);
     }
     
     backgroundDel();
     
-    
-   function pageEnterAnimation(){
-        setTimeout(function() {
-            $('.nav-dot:eq( 0 )').css({ "left": "0"});  
-        }, 1000);
-
-        setTimeout(function() {
-            $('.nav-dot:eq( 1 )').css({ "left": "0"});  
-        }, 1125);
-
-        setTimeout(function() {
-            $('.nav-dot:eq( 2 )').css({ "left": "0"});  
-        }, 1250);
-
-        setTimeout(function() {
-            $('.nav-dot:eq( 3 )').css({ "left": "0"});  
-        }, 1375);
-
-        setTimeout(function() {
-            $('.nav-dot:eq( 4 )').css({ "left": "0"});  
-        }, 1500);
    
-    
-        //$(".h1-h3").delay(1500).fadeIn(1000);
-       
-   }
-    setTimeout(function(){
-        pageEnterAnimation();
-    }, 500);
-    
     //padding-left clicking on any button
-    $('.nav-dot').click(function(){
-        $(this).addClass('aktive'); 
-        $(this).siblings().removeClass('aktive'); 
-        
-
-            
-        
-        
-    })
+    // $('.nav-dot').click(function(){
+    //     $(this).addClass('aktive'); 
+    //     $(this).siblings().removeClass('aktive'); 
+           
+    // })
     
 
     
- /*   
-        // PLUS MINUS BUTTONS IN SECTION-4
-    $('.button_plus:eq( 0 )').on('click', function() {
-        $('.comp-wrapper:eq( 0 ) > img').fadeOut(300);
-        setTimeout(function(){
-            $( ".comparison:eq( 0 )" ).css({ "width": "100%"});
-     
-        }, 500);
-    });
-    
-    $('.button_minus:eq( 0 )').on('click', function() {
-        $( ".comparison:eq( 0 )" ).css({ "width": "60%"} );  
-        $('.comp-wrapper:eq( 0 ) > img').delay(900).fadeIn(250);
-    });
-    
-    
-    $('.button_plus:eq( 1 )').on('click', function() {
-        $('.comp-wrapper:eq( 1 ) > img').fadeOut(300);
-        setTimeout(function(){
-            $( ".comparison:eq( 1 )" ).css({ "width": "100%"});
-     
-        }, 500);
-    });
-    
-    $('.button_minus:eq( 1 )').on('click', function() {
-        $( ".comparison:eq( 1 )" ).css({ "width": "60%"} );  
-        $('.comp-wrapper:eq( 1 ) > img').delay(900).fadeIn(250);
-    });
-    
-*/
-   
-    
-   
- 
-    
-    
 
-    
     
 
     $('.page-slider').each(function() {
@@ -152,24 +118,14 @@ $(document).ready(function(){
         
         
         
+
         
         
         
         
         
-        
-        
-        
-        
-        
-        
-        
-        
-         $('*').scroll(function(){
-                var scrollbarLocation = $(this).scrollTop();
-                
-                //console.log(scrollbarLocation)
-            });
+      
+
         
         
     }); //('.page-slider') END
