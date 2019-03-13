@@ -493,7 +493,7 @@ html, body {
   color: #846F67;
 }
 
-/* --------------------- SECTION-2 --------------------- */
+/* --------------------- SECTION-2 main --------------------- */
 #section-2 {
   font-size: 3em;
   background: #343434;
@@ -504,7 +504,7 @@ html, body {
 }
 
 #section-2 .section-content {
-  background: url(./img-photography/4k-wallpaper-architecture-background-1308624.jpg);
+  background: url("./img-photography/astronomy-constellation-dark-998641.jpg");
   filter: alpha(opacity=15);
   background-size: cover;
   background-repeat: no-repeat;
@@ -512,12 +512,13 @@ html, body {
   margin: auto;
   height: 100%;
   overflow: hidden;
+  overflow-y: scroll;
 }
 
-@media (max-width: 1440px) {
-  #section-2 .section-content {
-    overflow-y: scroll;
-  }
+#section-2 .panel-top {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 
 #section-2 a {
@@ -526,63 +527,36 @@ html, body {
   color: black;
 }
 
-.active-port {
+#section-2 .active-port {
   background: red;
 }
 
-.tab-content {
-  margin-left: 10%;
-}
-
-.tabs-container {
-  margin: auto;
+#section-2 .tabs-container {
+  margin: 0 auto;
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 
-.tabs-container ul {
+#section-2 .tabs-container ul {
   margin-top: 20px;
   position: relative;
   border-radius: 3px;
   border: 1px white solid;
 }
 
-.tabs-container li {
+#section-2 .tabs-container li {
   z-index: 799;
   font-size: 16px;
 }
 
-.tabs-container a {
+#section-2 .tabs-container a {
   padding: 8px 80px;
   font-family: 'Frandklin gothic medium', 'Arial Narrow', Arial, sans-serif;
   text-decoration: none;
   color: black;
 }
 
-.inner-content {
-  margin: 0;
-  max-height: 100%;
-  max-width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row;
-          flex-flow: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-}
-
-.inner-content img {
-  max-height: 300px;
-  margin: 1% auto;
-}
-
-.hor-panel {
+#section-2 .hor-panel {
   content: "";
   position: absolute;
   width: 100%;
@@ -593,6 +567,89 @@ html, body {
   z-index: 0;
   -webkit-box-shadow: 2px 5px 20px rgba(0, 0, 0, 0.41);
           box-shadow: 2px 5px 20px rgba(0, 0, 0, 0.41);
+}
+
+#section-2 .inner-content {
+  /*
+        min-height: 100vh;
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        margin: 100px 10%;
+        */
+}
+
+#section-2 .inner-content img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top center;
+     object-position: top center;
+  padding: 5px;
+}
+
+#section-2 .tab-content_casual {
+  min-height: 100vh;
+  max-width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[6];
+      grid-template-columns: repeat(6, 1fr);
+  -ms-grid-rows: (1fr)[4];
+      grid-template-rows: repeat(4, 1fr);
+  margin: 100px 10%;
+}
+
+#section-2 .tab-content_casual .big {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+#section-2 .tab-content_casual .small {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
+#section-2 .tab-content_event {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[6];
+      grid-template-columns: repeat(6, 1fr);
+  -ms-grid-rows: (minmax(150px, 1fr))[7];
+      grid-template-rows: repeat(7, minmax(150px, 1fr));
+  margin: 100px 10%;
+  grid-auto-flow: dense;
+}
+
+#section-2 .tab-content_event .featured {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 5;
+  grid-column: 2 / 7;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  grid-row: 1 / 4;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(white));
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, white 100%);
+}
+
+#section-2 .tab-content_event .featured-text {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1 / 3;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2 / 3;
+  z-index: 10;
+  color: white;
+}
+
+#section-2 .tab-content_event .small {
+  grid-column: span 2;
+  grid-row: span 2;
+  -webkit-filter: brightness(80%);
+          filter: brightness(80%);
 }
 
 /* --------------------- SECTION-3 --------------------- */
