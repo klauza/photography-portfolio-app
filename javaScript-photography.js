@@ -170,18 +170,27 @@ $(document).ready(function(){
     
     $('.tabs-container ul li:nth-child(1)').on('click', function(){
         $('.hor-panel').animate({
-            left: '0px'
+            left: '0px',
         })
+        $('body, html, *').animate({
+            scrollTop: 0
+        }); 
     });
     
     $('.tabs-container ul li:nth-child(2)').on('click', function(){
         $('.hor-panel').animate({
             left: width1 + 'px' //-10 left margin
         })
+        $('body, html, *').animate({
+            scrollTop: 0
+        });
     });
     
      $('.tabs-container ul li:nth-child(3)').on('click', function(){
         $('.hor-panel').animate({
             left: width1 + width1 + 'px' 
         })
+        $('body, html, *').animate({
+            scrollTop: 0
+        });
     });
