@@ -1,12 +1,13 @@
 
 ## :camera: THIS IS A PAGE INCLUDED IN PORTFOLIO 
 
-# v1.3.0 - v1.3.8
+# v1.3.0 - v1.3.9
  - [x] Changed file construction; v1.3.1
  - [x] Home page reworked; v1.3.2
  - [x] nav big_device; v1.3.3
  - [x] added question mark back button in the corner; v1.3.4/5
  - [x] Portrait page reworked; v1.3.6/7/8
+ - [x] Page Opimization; v1.3.9
  - [ ] Street & outdoor page reworked
  - [ ] Manipulations page reworked
  - [ ] Equipment page reworked
