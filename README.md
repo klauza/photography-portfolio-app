@@ -8,6 +8,7 @@
  - [x] added question mark back button in the corner; v1.3.4/5
  - [x] Portrait page reworked; v1.3.6/7/8
  - [x] Page Opimization; v1.3.9
+ - [x] nav small_device added; v1.3.10
  - [ ] Street & outdoor page reworked
  - [ ] Manipulations page reworked
  - [ ] Equipment page reworked

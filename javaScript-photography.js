@@ -20,7 +20,11 @@ $(document).ready(function(){
 
 
     // ===============================================================================
-    // SHOWING MENU
+    // SHOWING MENU [PC]
+if(window.innerWidth > 768){
+    $('.section-content-title').css("display", "none");
+
+
     const showMenu = () => {
         $(".nav-dots").css({
             "transform":"translateX(0) translateY(-50%)"
@@ -32,7 +36,7 @@ $(document).ready(function(){
        
 
     $("body").on("mousemove",function(event) {
-        if (event.pageX < 60) {
+        if (event.pageX < 100) {
             showMenu();
         }
     });
@@ -62,25 +66,48 @@ $(document).ready(function(){
     // ===============================================================================
 
 
-    
+
     const backgroundDel = () => {
         setTimeout(function(){
             var backG = document.getElementsByClassName('biegie')[0];
             backG.classList="";
             showMenu();
+            
         }, 1000);
     }
     
     backgroundDel();
     
-   
-    //padding-left clicking on any button
-    // $('.nav-dot').click(function(){
-    //     $(this).addClass('aktive'); 
-    //     $(this).siblings().removeClass('aktive'); 
-           
-    // })
+}
+
+
+
+// SHOWING MENU [MOBILE]
+if(window.innerWidth < 768){
     
+    const mobileButton = $('.mobile-menu-open');
+
+
+    mobileButton.on('click', function(){
+        $('.nav-dots').css("display","flex");
+        $(this).css("display","none");
+        $('.mobile-backdrop').css("display","block");
+    })
+
+    $('.nav-dot').on('click', function() {
+        $('.nav-dots').css("display","none");
+        mobileButton.css("display","block");
+        $('.mobile-backdrop').css("display","none");
+    })
+    $('.mobile-exit').on('click', function(){
+        $('.nav-dots').css("display","none");
+        mobileButton.css("display","block");
+        $('.mobile-backdrop').css("display","none");
+    })
+
+
+}
+
 
     
 
@@ -99,7 +126,7 @@ $(document).ready(function(){
 
 
         $('.nav-dot').on('click', function() {
-
+            
             var slideToGo = $(this).data('slide');
             goToSlide(slideToGo);
             $('*').delay(500).animate({ scrollTop: 0 });
