@@ -1,7 +1,7 @@
 
 ## :camera: THIS IS A PAGE INCLUDED IN PORTFOLIO 
 
-# v1.3.0 - v1.3.9
+# v1.3.0 - v1.3.10
  - [x] Changed file construction; v1.3.1
  - [x] Home page reworked; v1.3.2
  - [x] nav big_device; v1.3.3
