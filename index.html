@@ -11,6 +11,14 @@
 	<meta name="keywords" content="SŁOWA KLUCZOWE"/>
 	<link rel="stylesheet" type="text/css" href="style-photography.css">
     <link rel="stylesheet" href="jquery-image-comparison.css">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-135010689-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-135010689-1');
+    </script>
     
    
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
@@ -24,6 +32,7 @@
 	
 </head>
 <body>
+    
     <div class="question-svg swap-q-mark-1"></div>
     <div class="backDiv">
         <div class="backDiv__maintext">back to:</div>
@@ -32,13 +41,17 @@
     </div>
 
     <div class="biegie"></div>
-   
-    
+
+    <div class="mobile-menu-container">
+        <div class="mobile-menu-open">
+            <img src="/svg/menu.svg" alt="">
+        </div>
+    </div>
     
 <div class="page-slider">
    
  
-  
+  <!-- Navigation-big -->
   <div class="nav-dots">
    
     <div data-slide="1" class="nav-dot"> 
@@ -56,7 +69,13 @@
     <div data-slide="5" class="nav-dot"> 
         <span>Equipment</span>
     </div>
+
+    <div class="mobile-exit">
+        <img src="/svg/exit.svg" alt="">
+    </div>
+
   </div>
+  <div class="mobile-backdrop"></div>
 
   <div class="arrow-box"></div>
   <svg id="arrow" data-name="Warstwa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 353.72 285.21">
@@ -64,14 +83,16 @@
     <polygon points="4.23 3.32 104.16 142.6 4.23 281.88 349.7 142.6 4.23 3.32" fill="#fff" stroke="#000" stroke-miterlimit="10" stroke-width="3"/>
   </svg>
   
- 
+  <!-- Navigation-big_End -->
+
+
   <!-- Home -->
   <div data-slide="1" class="panel">
     <div id="layer-1" class="trans-layer"></div>
     <section id="section-1" class="section">
       
       <div class="section-content">
-       
+        <div class="section-content-title"><h1>Home</h1></div>
         <div class="section-content__description">
             <h1>Photography</h1>
             <h3><span>Edges of</span> Back to the</h3>
@@ -88,6 +109,7 @@
     <div id="layer-2" class="trans-layer"></div>
     <section id="section-2" class="section">
         <div class="section-content">
+            <div class="section-content-title"><h1>Portraits</h1></div>
             <div class="tabs-container text-center">
                 <div class="d-flex justify-content-center reload panel-top">
                    
@@ -206,7 +228,7 @@
     <div id="layer-3" class="trans-layer"></div>
     <section id="section-3" class="section">
       <div class="section-content">
-       
+        <div class="section-content-title"><h1>Street & Outdoor</h1></div>
         <div class="horizontalScroll">
             <div class="block"> <div class="block-bg"> </div> </div>
             <div class="block"> <div class="block-bg"> </div> </div>
@@ -228,7 +250,7 @@
     <div id="layer-4" class="trans-layer"></div>
     <section id="section-4" class="section">
         <div class="section-content">
-           
+            <div class="section-content-title"><h1>Manipulations</h1></div>
            
             <div class="tabs-container2 text-center w-95">
                 <h3 class="m-4 text-primary">Manipulations</h3>
@@ -440,11 +462,12 @@
     </section>
   </div>
   
+  <!-- Equipment -->
   <div data-slide="5" class="panel">
     <div id="layer-5" class="trans-layer"></div>
     <section id="section-5" class="section">
       <div class="section-content">
-      
+        <div class="section-content-title"><h1>Equipment</h1></div>
       
        <div class="section-content__section-1">
            <p class="parallax-p">Hi, I do photography for fun, it's just a hobby to me. So here is equipment that I shold be used by everyone </p>
