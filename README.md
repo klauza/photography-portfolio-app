@@ -1,7 +1,7 @@
 
 ## :camera: THIS IS A PAGE INCLUDED IN PORTFOLIO 
 
-# v1.3.0 - v1.3.12
+# v1.3.0 - v1.3.13
  - [x] Changed file construction; v1.3.1
  - [x] Home page reworked; v1.3.2
  - [x] nav big_device; v1.3.3
@@ -9,8 +9,9 @@
  - [x] Portrait page reworked; v1.3.6/7/8
  - [x] Page Opimization; v1.3.9
  - [x] nav small_device added; v1.3.10
- - [x] mobile querries for 'home' && changed typo; v1.3.11
- - [x] mobile querries for 'portraits'; v1.3.12
+ - [x] mobile queries for 'home' && changed typo; v1.3.11
+ - [x] mobile queries for 'portraits'; v1.3.12
+ - [ ] code refactorization at 'street' page; v1.3.13
  - [ ] Street & outdoor page reworked
  - [ ] Manipulations page reworked
  - [ ] Equipment page reworked
