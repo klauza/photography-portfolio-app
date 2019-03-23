@@ -6,6 +6,9 @@
   padding: 0;
 }
 
+/*
+@include mediaQ{ }
+*/
 html, body {
   margin: 0;
   padding: 0;
@@ -553,7 +556,7 @@ $ff-p: 'Permanent+Marker';
 #section-1 .section-content__description h1 {
   font-size: 2em;
   text-transform: uppercase;
-  color: black;
+  color: #73a0c5;
   position: relative;
   margin: 0;
   letter-spacing: 11px;
@@ -590,7 +593,7 @@ $ff-p: 'Permanent+Marker';
 }
 
 #section-1 .section-content__description h4 {
-  text-indent: 240px;
+  text-indent: 225px;
 }
 
 #section-1 .section-content__description h3 {
@@ -599,6 +602,15 @@ $ff-p: 'Permanent+Marker';
 
 #section-1 .section-content__description span {
   color: #846F67;
+}
+
+@media (max-width: 768px) {
+  #section-1 .section-content__description {
+    -webkit-transform: rotateZ(0deg) scale(1.25) translate(-50%, -50%);
+            transform: rotateZ(0deg) scale(1.25) translate(-50%, -50%);
+    top: 38%;
+    left: 50%;
+  }
 }
 
 /* --------------------- SECTION-2 main --------------------- */

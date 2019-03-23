@@ -13,7 +13,15 @@ $ff-b: 'Bitter';
 $ff-d: 'Dancing+Script';
 $ff-p: 'Permanent+Marker';
 
+@mixin mediaQ($width: 768px){
+    @media(max-width: $width){
+        @content;
+    }
+}
 
+/*
+@include mediaQ{ }
+*/
 
 
 
