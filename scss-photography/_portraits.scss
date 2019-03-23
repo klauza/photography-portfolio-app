@@ -50,21 +50,41 @@
                 @media screen and (max-width: 768px){
                     margin-top: 65px;
                 }
-               
+                li{
+                    z-index: 799;
+                    font-size: 16px;
+                    a{
+                        padding: 8px 80px;
+                        font-family: 'Frandklin gothic medium', 'Arial Narrow', Arial, sans-serif;
+                        color: white;   
+                        list-style: none;
+                        text-decoration: none;
+                        font-family: $ff-p;
+                        font-size: 1.15em;
+                    }
+                }
+
+                @include mediaQ{ 
+                    width: 100%;
+                    li{
+                        width: 33%;
+                        height: 50px;
+                        text-align: center;
+
+                        a{
+                            height: 100%;
+                            width: 100%;
+                            text-align: center;
+                            padding: 0;
+                            line-height: 50px;
+                        }
+                    }
+                }
             }
-            li{
-                z-index: 799;
-                font-size: 16px;
-            }
-            a{
-                padding: 8px 80px;
-                font-family: 'Frandklin gothic medium', 'Arial Narrow', Arial, sans-serif;
-                color: white;   
-                list-style: none;
-                text-decoration: none;
-                font-family: $ff-p;
-                font-size: 1.15em;
-            }
+                
+            
+
+
 
             .hor-panel{
                 content: "";
@@ -76,6 +96,8 @@
                 cursor: pointer;
                 z-index: 0;
                 box-shadow: 2px 5px 20px rgba(0, 0, 0, 0.41);
+
+                
             }
         }
         
@@ -121,13 +143,42 @@
             img:nth-of-type(12),
             img:nth-of-type(15){
                 transform: translateY(50%);
+
+                @include mediaQ{ 
+                    transform: translateY(0%);
+                }
             }
             
             img:nth-of-type(9){
                 transform: translateY(25%);
+
+                @include mediaQ{ 
+                    transform: translateY(0%);
+                }
             }
+
+            // MOBILE CASUAL
+            @include mediaQ{ 
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: unset;
+                grid-auto-rows: minmax(225px, 1fr);
+                margin: 50px 2% 100px 2%;
+                height: auto;
+                grid-auto-flow: dense;
+                .big{
+                    grid-column: span 2;
+                    grid-row: span 2;
+                }
+                .small{
+                    grid-column: span 1;
+                    grid-row: span 1;
+                }
+                
+            }
+
         }
         
+
         .hero-img{
             max-height: 300px;
             width: 100%;
@@ -169,6 +220,7 @@
                     
                     text-align: left;
                     margin-left: 5px;
+                   
                     &__top{
                         //display: block;
                         background: white;
@@ -221,6 +273,44 @@
                     }
                 }
             }
+
+            // MOBILE DRAMA
+            @include mediaQ{
+                margin: 0 1.5%;
+                &__container{
+                    .container-text{
+                        justify-content: start;
+
+                        &__top{
+                            margin-left: 20px;
+                            position: relative;
+                            &::after{
+                                content:'';
+                                position: absolute; top:50%; left: -15px;
+                                transform: translateY(-50%) rotatez(45deg);
+                                background: rgb(255, 255, 255);
+                                width: 10px; height: 10px;
+                                z-index: -1;
+                            }
+                        }
+                        &__bot{
+                            background: linear-gradient(
+                                to bottom,
+                                rgb(112, 112, 112),
+                                rgba(139, 139, 139, 0.507),
+                                rgba(139, 139, 139, 0.0)
+                                );
+                            min-height: 200px;
+                            &-author{
+                           
+                            }
+                            &::after{
+                               all: unset;
+                            }
+                        }
+                    }
+                }
+            }
         }
 
         &_event{
@@ -251,6 +341,11 @@
                 grid-row: span 2;
                 filter: brightness(80%);
             }
+            
+        @include mediaQ{
+            margin: 100px 2%;
+        }
+
         }
     }
 
