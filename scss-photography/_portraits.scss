@@ -278,15 +278,36 @@
             @include mediaQ{
                 margin: 0 1.5%;
                 &__container{
+                    flex-direction: column;
+                    max-height: unset;
+                    height: auto;
+                    .picture{
+                        flex: 1;
+                        margin-top: 50px;
+                    }
+
                     .container-text{
                         justify-content: start;
-
+                        
                         &__top{
-                            margin-left: 20px;
+                            max-width: 200px;
+                            padding: 0; margin: 0;
+                            text-align: center;
                             position: relative;
+                            left: 50%;
+                            transform: translateX(-50%);
+                      
                             &::after{
                                 content:'';
                                 position: absolute; top:50%; left: -15px;
+                                transform: translateY(-50%) rotatez(45deg);
+                                background: rgb(255, 255, 255);
+                                width: 10px; height: 10px;
+                                z-index: -1;
+                            }
+                            &::before{
+                                content:'';
+                                position: absolute; top:50%; right: -15px;
                                 transform: translateY(-50%) rotatez(45deg);
                                 background: rgb(255, 255, 255);
                                 width: 10px; height: 10px;
@@ -301,8 +322,27 @@
                                 rgba(139, 139, 139, 0.0)
                                 );
                             min-height: 200px;
+                            margin: 0 auto; padding: 0;
+                            text-align: center;
+
+                            &-desc{
+                                display: block;
+                                color: white;
+                                margin: 3px auto;
+                                max-width: 100%;
+                                &::after{
+                                    content: '';
+                                    display: block;
+                                    margin: 10px auto 10px;
+                                    width: 30%;
+                                    height: 2px;
+                                    background: black;
+                                }
+                            }
+                            
                             &-author{
-                           
+                                margin: 0 auto;padding: 0;
+                                text-align: center;
                             }
                             &::after{
                                all: unset;
@@ -310,6 +350,28 @@
                         }
                     }
                 }
+
+                &__container:nth-of-type(even){
+                    .picture img{
+                        border: 5px solid rgb(52, 88, 153);
+                    }
+                    .container-text{
+                        &__top{
+                            background: rgba(52, 87, 153, 0.65);
+                            &::after,
+                            &::before{
+                                background: rgb(34, 57, 99);
+                                border: 1px solid white;
+                            }
+                        }
+                        &__bot{
+                            &-desc{
+                                color: rgb(176, 204, 255);
+                            }
+                        }
+                    }
+                }
+
             }
         }
 
@@ -344,6 +406,9 @@
             
         @include mediaQ{
             margin: 100px 2%;
+            .featured-text{
+                font-size: 2.15em;
+            }
         }
 
         }
