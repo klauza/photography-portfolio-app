@@ -75,9 +75,9 @@
             }
 
             @include mediaQ{ 
-                transform: rotateZ(0deg) scale(1.25) translate(-50%, -50%);
+                top: 35%; left: 50%;
+                transform: rotateZ(-20deg) scale(0.95) translate(-50%, -50%);
 
-                top: 38%; left: 50%;
 
             }
 
