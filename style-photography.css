@@ -1210,6 +1210,18 @@ $ff-p: 'Permanent+Marker';
   margin: auto;
 }
 
+#section-4 .section-content-desc {
+  padding-top: 100px;
+  font-size: 1.25em;
+  color: #738000;
+}
+
+@media (max-width: 768px) {
+  #section-4 .section-content-desc {
+    display: none;
+  }
+}
+
 .comp-wrapper {
   height: auto;
   -webkit-box-pack: center;
@@ -1289,6 +1301,13 @@ $ff-p: 'Permanent+Marker';
 
 #secition-4 .nav-link {
   padding: 0;
+}
+
+@media (max-width: 768px) {
+  #section-4 .section-content {
+    max-width: 100%;
+    padding-top: 100px;
+  }
 }
 
 /* --------------------- SECTION-5 --------------------- */
@@ -1422,5 +1441,56 @@ $ff-p: 'Permanent+Marker';
 
 #tipsRules div li {
   margin-left: 60px;
+}
+
+.comparison {
+  -webkit-transition: width 0.75s ease-in-out;
+  transition: width 0.75s ease-in-out;
+}
+
+.comparison {
+  display: inline-block;
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+  width: 100%;
+  /* width overall of that element */
+  z-index: 1;
+}
+
+.comparison li:last-child {
+  left: 0;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+}
+
+.comparison li img {
+  display: block;
+  max-width: 100%;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+@media (max-width: 768px) {
+  .comparison li img {
+    padding: 0;
+  }
+}
+
+.comparison.horizontal {
+  cursor: n-resize;
+}
+
+.comparison.vertical {
+  cursor: w-resize;
+  width: auto;
+}
+
+.comparison.vertical li:last-child img {
+  height: 100%;
+  max-width: inherit;
 }
 /*# sourceMappingURL=style-photography.css.map */
