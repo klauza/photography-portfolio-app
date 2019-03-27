@@ -50,7 +50,8 @@
   .horizontalScroll .block:nth-child(#{$i}) .block-bg{
     background: url('./img-photography/outdoor/outdoor'+$i+'.jpg');
     background-size: cover;
-    background-position: 50% 150px;
+    background-position-x: 50%;
+    background-position-y: 50%;
     background-repeat: no-repeat;
   }
 }
