@@ -1093,7 +1093,7 @@ $ff-p: 'Permanent+Marker';
           transform-origin: right top;
   -webkit-transform: rotate(-90deg) translate3d(0, -100vh, 0);
           transform: rotate(-90deg) translate3d(0, -100vh, 0);
-  padding-top: 350px;
+  padding-top: 325px;
 }
 
 #section-3 .section-content .horizontalScroll .block {
@@ -1109,9 +1109,6 @@ $ff-p: 'Permanent+Marker';
 }
 
 #section-3 .section-content .horizontalScroll .block-bg {
-  position: absolute;
-  top: 0;
-  left: 0;
   -webkit-transform: skew(15deg) scale(1.5);
           transform: skew(15deg) scale(1.5);
   width: 100%;
@@ -1128,49 +1125,49 @@ $ff-p: 'Permanent+Marker';
 }
 
 .horizontalScroll .block:nth-child(1) .block-bg {
-  background: url(./img-photography/outdoor/outdoor1.jpg);
+  background: url("./img-photography/outdoor/outdoor1.jpg");
   background-size: cover;
   background-position: 50% 150px;
   background-repeat: no-repeat;
 }
 
 .horizontalScroll .block:nth-child(2) .block-bg {
-  background: url(./img-photography/outdoor/outdoor2.jpg);
+  background: url("./img-photography/outdoor/outdoor2.jpg");
   background-size: cover;
-  background-position: 50% 100px;
+  background-position: 50% 150px;
   background-repeat: no-repeat;
 }
 
 .horizontalScroll .block:nth-child(3) .block-bg {
-  background: url(./img-photography/outdoor/outdoor3.jpg);
+  background: url("./img-photography/outdoor/outdoor3.jpg");
   background-size: cover;
   background-position: 50% 150px;
   background-repeat: no-repeat;
 }
 
 .horizontalScroll .block:nth-child(4) .block-bg {
-  background: url(./img-photography/outdoor/outdoor4.jpg);
+  background: url("./img-photography/outdoor/outdoor4.jpg");
   background-size: cover;
   background-position: 50% 150px;
   background-repeat: no-repeat;
 }
 
 .horizontalScroll .block:nth-child(5) .block-bg {
-  background: url(./img-photography/outdoor/outdoor5.jpg);
+  background: url("./img-photography/outdoor/outdoor5.jpg");
   background-size: cover;
   background-position: 50% 150px;
   background-repeat: no-repeat;
 }
 
 .horizontalScroll .block:nth-child(6) .block-bg {
-  background: url(./img-photography/outdoor/outdoor6.jpg);
+  background: url("./img-photography/outdoor/outdoor6.jpg");
   background-size: cover;
   background-position: 50% 150px;
   background-repeat: no-repeat;
 }
 
 .horizontalScroll .block:nth-child(7) .block-bg {
-  background: url(./img-photography/outdoor/outdoor1.jpg);
+  background: url("./img-photography/outdoor/outdoor7.jpg");
   background-size: cover;
   background-position: 50% 150px;
   background-repeat: no-repeat;
@@ -1184,6 +1181,8 @@ $ff-p: 'Permanent+Marker';
   display: grid;
   place-items: center;
   font-size: 28px;
+  color: white;
+  font-size: 1.2em;
 }
 
 /* --------------------- SECTION-4 --------------------- */

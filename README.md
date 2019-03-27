@@ -13,7 +13,7 @@
  - [x] mobile queries for 'portraits'; v1.3.12
  - [x] code refactorization at 'street' page; v1.3.13
  - [x] some major current mobile issues fixes; v1.3.14
- - [ ] Street & outdoor page reworked
+ - [x]  Street & outdoor page reworked; v1.3.15
  - [ ] Manipulations page reworked
  - [ ] Equipment page reworked
  - [ ] \(optional):grey_question: About page added
