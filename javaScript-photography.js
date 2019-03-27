@@ -1,6 +1,6 @@
 ﻿
 $(document).ready(function(){
-
+ 
 
     // ===============================================================================
     // QUESTION MARK
@@ -22,6 +22,12 @@ $(document).ready(function(){
     // ===============================================================================
     // SHOWING MENU [PC]
 if(window.innerWidth > 768){
+  // reload page if width < 768
+  $(window).resize(function() {
+    if($(window).width() < 768)
+      document.location.reload(true);
+  });
+
     $('.section-content-title').css("display", "none");
 
 
@@ -84,6 +90,11 @@ if(window.innerWidth > 768){
 
 // SHOWING MENU [MOBILE]
 if(window.innerWidth < 768){
+  // reload page if width > 768
+  $(window).resize(function() {
+    if($(window).width() > 768)
+      document.location.reload(true);
+  });
     
     const mobileButton = $('.mobile-menu-open');
 
