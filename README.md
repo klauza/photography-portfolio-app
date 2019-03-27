@@ -1,7 +1,7 @@
 
 ## :camera: THIS IS A PAGE INCLUDED IN PORTFOLIO 
 
-# v1.3.0 - v1.3.15
+# v1.3.0 - v1.3.16
  - [x] Changed file construction; v1.3.1
  - [x] Home page reworked; v1.3.2
  - [x] nav big_device; v1.3.3
@@ -14,7 +14,7 @@
  - [x] code refactorization at 'street' page; v1.3.13
  - [x] some major current mobile issues fixes; v1.3.14
  - [x]  Street & outdoor page reworked; v1.3.15
- - [ ] Manipulations page reworked
+ - [x] Manipulations page reworked, mobile too; v1.3.16
  - [ ] Equipment page reworked
  - [ ] \(optional):grey_question: About page added
  <br/>
