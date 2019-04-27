@@ -17,9 +17,9 @@
 
     &-desc{
       padding-top: 100px;
-      font-size: 1.25em;
-      color: rgb(115, 128, 0);
-
+      font-size: 1.4em;
+      color: rgb(255, 255, 255);
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
       @include mediaQ{
         display: none;
       }
@@ -52,6 +52,7 @@
     border-top: 2px solid black;
     border-image: linear-gradient(to right, rgba(67, 67, 67, 0.89) , black, rgba(67, 67, 67, 0.89));
     border-image-slice: 3;
+    color: rgb(132, 146, 0);
     
 }
 
