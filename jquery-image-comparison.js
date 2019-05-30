@@ -1,4 +1,4 @@
-$(function() {
+export const imageComparisonFunction = () => {
 
 	var $comparisons = $('.comparison');
 	$.each($comparisons, function() {
@@ -35,4 +35,4 @@ $(function() {
 
 	});
 
-});
+};

@@ -1,6 +1,6 @@
 ﻿
-$(document).ready(function(){
- 
+
+  export const mainPageLoader = () => {
 
     // ===============================================================================
     // QUESTION MARK
@@ -72,7 +72,7 @@ if(window.innerWidth > 768){
     // ===============================================================================
 
 
-
+    // Removing black screen on page load
     const backgroundDel = () => {
         setTimeout(function(){
             var backG = document.getElementsByClassName('biegie')[0];
@@ -83,7 +83,6 @@ if(window.innerWidth > 768){
     }
     
     backgroundDel();
-    
 }
 
 
@@ -124,68 +123,53 @@ if(window.innerWidth < 768){
 
     
 
-    $('.page-slider').each(function() {
-      var $slider =  $(this);
-      console.log($slider);
-      //var numberOfSlides = $slider.find('.panel').length;
-
- 
-      $slider.find('.panel:eq(0)').addClass('_active'); // po wczytaniu sie strony, daje pierwsza kropke jako aktywną 
-      $slider.find('.nav-dot:eq(0)').addClass('active aktive');
+  $('.page-slider').each(function() {
+    var $slider =  $(this);
+    console.log($slider);
+    //var numberOfSlides = $slider.find('.panel').length;
 
 
+    $slider.find('.panel:eq(0)').addClass('_active'); // first dot is active after page loads
+    $slider.find('.nav-dot:eq(0)').addClass('active aktive');
 
 
-        $('.nav-dot').on('click', function() {
-            
-            var slideToGo = $(this).data('slide');
-            goToSlide(slideToGo);
-            $('*').delay(500).animate({ scrollTop: 0 });
-           // $('.hor-panel').delay(500).animate({ left: 0 });
-            
-     
-         
-            $('.nav-item').siblings().removeClass('active show');
-            $('.nav-item:nth-child(1)').addClass('active show');
-        });
 
+
+    $('.nav-dot').on('click', function() {
         
-   
-
-      $slider.on('slide.changed', function() {
-     
-  
-        $('.nav-dot').removeClass('active');
-
-        var $activeDot = $('.nav-dot[data-slide="'+$('.panel._active').data('slide')+'"]');
-        $activeDot.addClass('active');
-        });
-
-    
-
-      function goToSlide(slideToGo) {
-          $('.panel._active').removeClass('_active');
-          $slider.find('.panel').eq(slideToGo -1).addClass('_active');
-          $activeSlide = $slider.find('.panel').eq(slideToGo -1).addClass('_active');
-          $slider.trigger('slide.changed');  
-          document.body.scrollTop = 0; // For Safari
-          document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-          }
-        
-        
-        
-
-        
-        
-        
-        
-        
+      var slideToGo = $(this).data('slide');
+      goToSlide(slideToGo);
+      $('*').delay(500).animate({ scrollTop: 0 });
+      // $('.hor-panel').delay(500).animate({ left: 0 });
       
 
-        
-        
-    }); //('.page-slider') END
-}); //(document).ready END
+    
+      $('.nav-item').siblings().removeClass('active show');
+      //$('.nav-item:nth-child(1)').addClass('active show');
+      
+    });
+
+      
+  
+
+    $slider.on('slide.changed', function() {
+    
+      $('.nav-dot').removeClass('active');
+
+      var $activeDot = $('.nav-dot[data-slide="'+$('.panel._active').data('slide')+'"]');
+      $activeDot.addClass('active');
+    });
+
+    function goToSlide(slideToGo) {
+      $('.panel._active').removeClass('_active');
+      $slider.find('.panel').eq(slideToGo -1).addClass('_active');
+      //$activeSlide = $slider.find('.panel').eq(slideToGo -1).addClass('_active');
+      $slider.trigger('slide.changed');  
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+      
+  }); //('.page-slider') END
 
 
 // SECTION - 2
@@ -232,3 +216,4 @@ if(window.innerWidth < 768){
             scrollTop: 0
         });
     });
+}
