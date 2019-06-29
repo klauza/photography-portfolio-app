@@ -4,9 +4,12 @@ const path = require("path");
 module.exports = {
   mode: "development",
   devtool: "none",
-  entry: "./src/index.js",
+  entry: {
+    main: "./src/index.js"
+    //vendor: "./src/vendor.js"
+  },
   output: {
-    filename: "main.js",
+    filename: "[name].vendor.js",
     path: path.resolve(__dirname, "dist")
   },
 
