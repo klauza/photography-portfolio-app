@@ -23,6 +23,10 @@ This project was basically created at the beginning of studying front end. The p
     "webpack-cli": "3.3.2",
     "webpack-dev-server": "3.4.1"
 
+**jquery** ver. 3.3.1 - implemented inline
+
+**bootstrap** ver. 4.1.3 - implemented inline
+
 <br/>
 
 # Installation
@@ -35,13 +39,15 @@ This project was basically created at the beginning of studying front end. The p
 
 - `npm start` - provides local environment, starts continuous **Sass compiler**, **local server** and **browser sync**
 
+<br/>
 
 # Deployment
 - `npm run build` - creates dist folder in main dir ready to deploy
 
+<br/>
 
-## Issues
+# Issues
 --
 
-## License
+# License
 MIT license
