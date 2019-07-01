@@ -46,7 +46,7 @@ if(window.innerWidth > 768){
             showMenu();
         }
     });
-
+    showMenu();
     
     // ===============================================================================
     // HIDING MENU 
@@ -60,7 +60,7 @@ if(window.innerWidth > 768){
     $("#arrow").on('click', function(e){
         hideMenu();
     });
-    
+   
     $('*').scroll(function(){
         var scrollbarLocation = $(this).scrollTop();
             
@@ -73,16 +73,16 @@ if(window.innerWidth > 768){
 
 
     // Removing black screen on page load
-    const backgroundDel = () => {
-        setTimeout(function(){
-            var backG = document.getElementsByClassName('biegie')[0];
-            backG.classList="";
-            showMenu();
+    // const backgroundDel = () => {
+    //     setTimeout(function(){
+    //         var backG = document.getElementsByClassName('biegie')[0];
+    //         backG.classList="";
+    //         showMenu();
             
-        }, 1000);
-    }
+    //     }, 1000);
+    // }
     
-    backgroundDel();
+    // backgroundDel();
 }
 
 
