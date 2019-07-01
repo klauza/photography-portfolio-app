@@ -1,34 +1,47 @@
+# About
+This project was basically created at the beginning of studying front end. The page is founded with jquery as Single Page Application old-style.
+#### Languages: JavaScript, jQuery, Sass, HTML
 
-## :camera: THIS IS A PAGE INCLUDED IN PORTFOLIO 
-# v2.0.0+
-  - Project v2
-  - **npm start** for local environment server run <br/>
-  - **npm run build** for creating deploy-ready minified files <br/><br/>
-  
-# v1.3.0 - v1.3.18
- - [x] Changed file construction; v1.3.1
- - [x] Home page reworked; v1.3.2
- - [x] nav big_device; v1.3.3
- - [x] added question mark back button in the corner; v1.3.4/5
- - [x] Portrait page reworked; v1.3.6/7/8
- - [x] Page Opimization; v1.3.9
- - [x] nav small_device added; v1.3.10
- - [x] mobile queries for 'home' && changed typo; v1.3.11
- - [x] mobile queries for 'portraits'; v1.3.12
- - [x] code refactorization at 'street' page; v1.3.13
- - [x] some major current mobile issues fixes; v1.3.14
- - [x] Street & outdoor page reworked; v1.3.15
- - [x] Manipulations page reworked, mobile too; v1.3.16
- - [x] index clean code; js resize function add; minor fixes in 'street' page  v1.3.17
- - [x] Equipment page reworked v1.3.18
- 
- <br/>
- 
-# v1.2
- - code has been refactored
- <br/>
+<br/>
 
-# v1.1
- - added "photos" folder;
- - fixed page resize;
- - changed one photo in Manipulaiton section;
+# Dependencies
+**Webpack:** "@babel/core": "7.4.5",
+    "@babel/polyfill": "7.4.4",
+    "@babel/preset-env": "7.4.5",
+    "babel-loader": "8.0.6",
+    "clean-webpack-plugin": "3.0.0",
+    "css-loader": "2.1.1",
+    "file-loader": "3.0.1",
+    "html-loader": "0.5.5",
+    "html-webpack-plugin": "3.2.0",
+    "mini-css-extract-plugin": "0.7.0",
+    "node-sass": "4.12.0",
+    "optimize-css-assets-webpack-plugin": "5.0.1",
+    "sass-loader": "7.1.0",
+    "style-loader": "0.23.1",
+    "webpack": "4.32.2",
+    "webpack-cli": "3.3.2",
+    "webpack-dev-server": "3.4.1"
+
+<br/>
+
+# Installation
+#### Initial setup
+- install NodeJS [from here](https://nodejs.org/en/)
+
+#### In main project directory, run:
+
+- `npm install` - will get all the necessary packages for this project
+
+- `npm start` - provides local environment, starts continuous **Sass compiler**, **local server** and **browser sync**
+
+
+# Deployment
+- `npm run build` - creates dist folder in main dir ready to deploy
+
+
+## Issues
+--
+
+## License
+MIT license
