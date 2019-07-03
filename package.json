@@ -1,7 +1,7 @@
 {
   "name": "photography",
   "version": "1.0.0",
-  "description": "",
+  "description": "photography",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --config webpack.dev.js --open",
@@ -11,9 +11,9 @@
     "type": "git",
     "url": "git+https://github.com/klauza/photography.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": ["photography"],
+  "author": "klauza",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/klauza/photography/issues"
   },
