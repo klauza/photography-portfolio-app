@@ -60,12 +60,15 @@
     background: rgba(0, 0, 0, 0.26);
     background-size: cover;
     background-repeat: no-repeat;
-    
+    text-align: center;
+    font-size: 46px;
     display: grid;
     place-items: center;
-    font-size: 28px;
 
     color: white;
-    font-size: 1.2em;
+}
+.horizontalScroll .block:nth-child(6) .block-bg{
+    background-position-y: -50px;
+
 }
 
