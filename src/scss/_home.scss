@@ -1,96 +1,88 @@
+#section-1 {
+  overflow: hidden;
+  background: #343434;
 
-#section-1{
-    overflow: hidden;
-    background: #343434;
+  .section-content {
+    //background: url("./img-photography/main-page.jpg"),
+    // background-image: linear-gradient(
+    //     to bottom,
+    //     rgba(255, 255, 255, 0) 0%,
+    //     rgba(0, 0, 0, 0.15) 20%,
+    //     rgba(0, 0, 0, 0.15) 80%,
+    //     rgb(0, 0, 0) 100%),
+    //     url("./img-photography/main-page.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
 
-    .section-content{
-        //background: url("./img-photography/main-page.jpg"),
-        // background-image: linear-gradient(
-        //     to bottom, 
-        //     rgba(255, 255, 255, 0) 0%, 
-        //     rgba(0, 0, 0, 0.15) 20%, 
-        //     rgba(0, 0, 0, 0.15) 80%, 
-        //     rgb(0, 0, 0) 100%),
-        //     url("./img-photography/main-page.jpg");
-        background-size: cover;
-        background-position: center center;
-        height: 100vh;
-        position: absolute;
-        top: 0; left: 0;
-        width: 100%; 
+    &__description {
+      position: absolute;
+      top: 30%;
+      left: 22.5%;
 
-        
+      //   display:
 
-        &__description{
-            position: absolute;
-            top: 30%; left: 22.5%;
-            font-size: 1.5em;
-            transform: rotateZ(-20deg) scale(1.5);
-            font-family: Oswald, sans-serif;
+      font-size: 1.5em;
+      transform: rotateZ(-20deg) scale(1.5);
+      font-family: Oswald, sans-serif;
 
-            
+      h1 {
+        font-size: 2em;
+        text-transform: uppercase;
+        color: #c7c3c0;
+        position: relative;
+        margin: 0;
+        letter-spacing: 11px;
+        font-weight: 900;
 
-            h1{
-                font-size: 2em;
-                text-transform: uppercase;
-                color: #c7c3c0;
-                position: relative;
-                margin: 0;
-                letter-spacing: 11px;
-                font-weight: 900;
-
-                &::after,
-                &::before{
-                    content:'';
-                    display: block;
-                    height: 30px;
-                    width: 160px;
-                    position: absolute;
-                    bottom: -42px; left: 2px;
-                }
-                &::before{
-                    bottom: -38px; left: 0px;
-                    background: rgba(0, 0, 0, 0.25);
-                }
-                &::after{
-                    bottom: -44px; left: 4px;
-                    background: rgba(0, 0, 0, 0.25);
-                }
-            }
-            h3, h4{
-                color: #c7c3c0;
-                text-indent: 175px;
-                line-height: 30px;
-                margin: 0;
-            }
-            h4{
-                text-indent: 225px;
-            }
-            h3{
-                margin-top: 10px;
-            }
-
-            span{
-                color: #846F67;
-            }
-
-            @include mediaQ{ 
-                top: 35%; left: 50%;
-                transform: rotateZ(-20deg) scale(0.95) translate(-50%, -50%);
-
-
-            }
-
+        &::after,
+        &::before {
+          content: '';
+          display: block;
+          height: 30px;
+          width: 160px;
+          position: absolute;
+          bottom: -42px;
+          left: 2px;
         }
+        &::before {
+          bottom: -38px;
+          left: 0px;
+          background: rgba(0, 0, 0, 0.25);
+        }
+        &::after {
+          bottom: -44px;
+          left: 4px;
+          background: rgba(0, 0, 0, 0.25);
+        }
+      }
+      h3,
+      h4 {
+        color: #c7c3c0;
+        text-indent: 175px;
+        line-height: 30px;
+        margin: 0;
+      }
+      h4 {
+        text-indent: 225px;
+      }
+      h3 {
+        margin-top: 10px;
+      }
+
+      span {
+        color: #846f67;
+      }
+
+      @include mediaQ {
+        top: 35%;
+        left: 50%;
+        transform: rotateZ(-20deg) scale(0.95) translate(-50%, -50%);
+      }
     }
-
-   
-   
-
-       
-
-
-  
-
-
+  }
 }

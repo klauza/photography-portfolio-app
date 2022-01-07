@@ -1,146 +1,133 @@
 /* LEFT NAV DOTS */
 .mobile-menu-open,
 .mobile-exit,
-.mobile-menu-container{
-    display: none;
+.mobile-menu-container {
+  display: none;
 }
 .nav-dots {
-    
-    position: fixed;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%) translateX(-100px);
+  position: fixed;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%) translateX(-100px);
 
-    z-index: 20;
-    width: 100px;
-    height: 100%;
+  z-index: 20;
+  width: 100px;
+  height: 100%;
 
-    display: flex;
-    flex-direction: column;
-    transition: 0.5s all ease;
+  display: flex;
+  flex-direction: column;
+  transition: 0.5s all ease;
 }
 
 .nav-dot {
-    position: relative;
-    left: 0;
-    width: 100%;
-    flex: 1;
-    //margin: 1em auto;
-    border: 1px solid rgba(0, 0, 0, 0.25);
+  position: relative;
+  left: 0;
+  width: 100%;
+  flex: 1;
+  //margin: 1em auto;
+  border: 1px solid rgba(0, 0, 0, 0.25);
 
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-    background: rgba(0, 0, 0, 0.25);
-    cursor: pointer;
-    //    transition: all 500ms cubic-bezier(.24, 1.5, .78, 1.42);
-    font-family: 'Oswald', sans-serif;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background: rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  //    transition: all 500ms cubic-bezier(.24, 1.5, .78, 1.42);
+  font-family: 'Oswald', sans-serif;
 }
 
-.nav-dot span{
-    opacity: 1;
-    height: 100%;
-    width: 100%;
-    display: grid;
-    place-items: center;
-    text-align: justify;
-    color: white;
+.nav-dot span {
+  opacity: 1;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  text-align: justify;
+  color: white;
 }
 
-
-.nav-dot:hover span{
-    color: white;
+.nav-dot:hover span {
+  color: white;
 }
 
-.nav-dot.active{ 
-    background: linear-gradient(
-      to right,
-      #18171a 15%,
-      #333237 100%
-    );
-    border-left: 1px solid black;
-
+.nav-dot.active {
+  background: linear-gradient(to right, #18171a 15%, #333237 100%);
+  border-left: 1px solid black;
 }
 
-
-
-.nav-dot.active span{
-    color: white;
+.nav-dot.active span {
+  color: white;
 }
 
-
-
-.arrow-box{
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    top: 50%; left: 110px;
+.arrow-box {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 50%;
+  left: 110px;
+  transform: translateY(-50%);
+  border: 4px solid rgba(189, 189, 189, 0.404);
+  border-radius: 50%;
+  z-index: 97;
+}
+@keyframes arrow-box-forward {
+  0% {
     transform: translateY(-50%);
-    border: 4px solid rgba(189, 189, 189, 0.404);
+    border-radius: 0%;
+    left: 10px;
+  }
+
+  100% {
+    transform: translateY(-50%);
     border-radius: 50%;
-    z-index: 99;
-
-   
+    left: 110px;
+  }
 }
-@keyframes arrow-box-forward{
-    0%{
-        transform: translateY(-50%);
-        border-radius: 0%;
-        left: 10px;
-    }
+@keyframes arrow-box-back {
+  0% {
+    transform: translateY(-50%);
+    border-radius: 50%;
+    left: 110px;
+  }
 
-    100%{
-        transform: translateY(-50%);
-        border-radius: 50%;
-        left: 110px;
-    }
-}
-@keyframes arrow-box-back{
-    0%{
-        transform: translateY(-50%);
-        border-radius: 50%;
-        left: 110px;
-    }
-
-    100%{
-        transform: translateY(-50%);
-        border-radius: 0%;
-        left: 10px;
-    }
+  100% {
+    transform: translateY(-50%);
+    border-radius: 0%;
+    left: 10px;
+  }
 }
 
+#arrow {
+  position: absolute;
+  top: 50%;
+  left: 110px;
+  transform: translateY(-50%) rotate(-180deg);
+  width: 50px;
+  z-index: 97;
 
+  &:hover {
+    cursor: pointer;
+  }
+}
 
-#arrow{
-    position: absolute;
-    top: 50%; left: 110px;
+@keyframes arrow-anim-forward {
+  0% {
+    transform: translateY(-50%) rotate(0deg);
+    left: 10px;
+  }
+
+  100% {
     transform: translateY(-50%) rotate(-180deg);
-    width: 50px;
-    z-index: 99;
-
-    &:hover{
-        cursor: pointer;
-    }
+    left: 110px;
+  }
 }
+@keyframes arrow-anim-back {
+  0% {
+    transform: translateY(-50%) rotate(180deg);
+    left: 110px;
+  }
 
-@keyframes arrow-anim-forward{
-    0%{
-        transform: translateY(-50%) rotate(0deg);
-        left: 10px;
-    }
-
-    100%{
-        transform: translateY(-50%) rotate(-180deg);
-        left: 110px;
-    }
-}
-@keyframes arrow-anim-back{
-    0%{
-        transform: translateY(-50%) rotate(180deg);
-        left: 110px;
-    }
-
-    100%{
-        transform: translateY(-50%) rotate(0deg);
-        left: 10px;
-    }
+  100% {
+    transform: translateY(-50%) rotate(0deg);
+    left: 10px;
+  }
 }
