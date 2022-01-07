@@ -1,16 +1,22 @@
 # About
 
-Project uses jQuery to imitate SPA website. The idea of the project is to showcase the work of a photographer by displaying his art in this portfolio.
+This project illustrates the photographer's portfolio showcase by displaying his work, art and also there is an additional section for more info.
+<br/>
 
-> Languages/tools used: JavaScript, jQuery, Sass, HTML
+website: [link](https://photography-portfolio-app.netlify.app/)
 
-> _project archived as public_
-
-> live website: [link](https://photography-klauza.netlify.app/)
+<img src="https://user-images.githubusercontent.com/43997053/148531578-0e3515f4-c427-421f-be2f-1f02f857de30.PNG" width="500">
 
 <br/>
 
-# Dependencies
+# Technical
+
+The project is using jQuery to imitate SPA website. <br/>
+**Languages/Tools:** JavaScript, jQuery, Sass, HTML
+
+<br/>
+
+## Dependencies
 
 **Webpack**
 
@@ -20,31 +26,21 @@ Project uses jQuery to imitate SPA website. The idea of the project is to showca
 
 <br/>
 
-# Installation
+## Installation
 
-#### Initial setup
+#### required
 
-- need to have installed python 2.7 (easy solution by installing **npm install --global windows-build-tools**)
-- install NodeJS [from here](https://nodejs.org/en/)
+- python 2.7
+- NodeJS
 
-#### In main project directory, run:
+#### commands:
 
-- `npm install` - will get all the necessary packages for this project
+- `npm install` - installs necessary packages for the project
 
-- `npm start` - provides local environment, starts continuous **Sass compiler**, **local server** and **browser sync**
-
-<br/>
-
-# Deployment
-
-- `npm run build` - creates dist folder in main dir ready to deploy
+- `npm start` - starts local environment (local server, Sass compiler, browser sync)
 
 <br/>
 
-# Issues
+## Live page
 
---
-
-# License
-
-MIT license
+[--> link <--](https://photography-portfolio-app.netlify.app/)

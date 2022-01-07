@@ -1,0 +1,29 @@
+.modal-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 98;
+  background: gray;
+  display: none;
+  place-items: center;
+}
+.modal {
+  height: 80vh;
+  width: 70vw;
+  background: #000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  // z-index: 98;
+  box-shadow: 0px 0px 24px 0px rgba(66, 68, 90, 1);
+
+  display: grid;
+  place-items: center;
+}
+
+.show-information {
+  display: grid;
+}
