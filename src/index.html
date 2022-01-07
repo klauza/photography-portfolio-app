@@ -1,538 +1,907 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-	<meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-	<title>Klauza photography</title>
+    <title>Photography portfolio app</title>
 
-	<meta name="description" content="desc"/>
-  <meta name="keywords" content="keywords"/>
-  
-    
+    <meta name="description" content="photography portfolio project" />
+    <meta name="keywords" content="keyword1 keyword2" />
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
     <!-- tab browser logo -->
-    <link rel="icon" href="favicon.png">
+    <link rel="icon" href="favicon.png" />
     <!-- icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
-    
-   
-	
-</head>
-<body>
-    <div class="loader"> <img src="loader.gif" alt="loading..."> </div>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="loader"><img src="loader.gif" alt="loading..." /></div>
     <div class="question-svg swap-q-mark-1"></div>
     <div class="backDiv">
-        <div class="backDiv__maintext">back to:</div>
-        <div class="backDiv__github"><li><a href="https://github.com/klauza">github</a></li></div>
-        <div class="backDiv__portfolio"><li><a href="http://www.port-klauza.com/">portfolio</a></li></div>
+      <div class="backDiv__maintext">Info:</div>
+      <div class="backDiv__github">
+        <span>show/hide</span>
+      </div>
+    </div>
+
+    <div class="modal-wrapper">
+      <div class="modal">
+        <h1>Website information</h1>
+        <p>Website created for educational purposes only.</p>
+      </div>
     </div>
 
     <!-- <div class="biegie"></div> -->
 
     <div class="mobile-menu-container">
-        <div class="mobile-menu-open">
-            <img src="./svg/menu.svg" alt="">
-        </div>
-    </div>
-    
-<div class="page-slider">
-   
- 
-  <!-- Navigation-big -->
-  <div class="nav-dots">
-   
-    <div data-slide="1" class="nav-dot"> 
-        <span>Main</span>
-    </div>
-    <div data-slide="2" class="nav-dot"> 
-        <span>Portraits</span>
-    </div>
-    <div data-slide="3" class="nav-dot"> 
-        <span>Street &amp; outdoor</span>
-    </div>
-    <div data-slide="4" class="nav-dot"> 
-        <span>Manipulations</span>
-    </div>
-    <div data-slide="5" class="nav-dot"> 
-        <span>Equipment</span>
-    </div>
-
-    <div class="mobile-exit">
-        <img src="./svg/exit.svg" alt="">
-    </div>
-
-  </div>
-  <div class="mobile-backdrop"></div>
-
-  <div class="arrow-box"></div>
-  <svg id="arrow" data-name="Warstwa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 353.72 285.21">
-    <title>Bez nazwy-1</title>
-    <polygon points="4.23 3.32 104.16 142.6 4.23 281.88 349.7 142.6 4.23 3.32" fill="#fff" stroke="#000" stroke-miterlimit="10" stroke-width="3"/>
-  </svg>
-  
-  <!-- Navigation-big_End -->
-
-
-  <!-- Home -->
-  <div data-slide="1" class="panel">
-    <div id="layer-1" class="trans-layer"></div>
-    <section id="section-1" class="section">
-      
-      <div class="section-content">
-        <div class="section-content-title"><h1>Home</h1></div>
-        <div class="section-content__description">
-            <h1>Photography</h1>
-            <h3><span>Edges of</span> Back to the</h3>
-            <h4>past <span>time</span></h4>
-        </div>
-        
+      <div class="mobile-menu-open">
+        <img src="./svg/menu.svg" alt="" />
       </div>
-    </section>
-  </div>
-  
+    </div>
 
-  <!-- Portraits -->
-  <div data-slide="2" class="panel">
-    <div id="layer-2" class="trans-layer"></div>
-    <section id="section-2" class="section">
-        <div class="section-content">
+    <div class="page-slider">
+      <!-- Navigation-big -->
+      <div class="nav-dots">
+        <div data-slide="1" class="nav-dot">
+          <span>Main</span>
+        </div>
+        <div data-slide="2" class="nav-dot">
+          <span>Portraits</span>
+        </div>
+        <div data-slide="3" class="nav-dot">
+          <span>Street &amp; outdoor</span>
+        </div>
+        <div data-slide="4" class="nav-dot">
+          <span>Manipulations</span>
+        </div>
+        <div data-slide="5" class="nav-dot">
+          <span>Equipment</span>
+        </div>
+
+        <div class="mobile-exit">
+          <img src="./svg/exit.svg" alt="" />
+        </div>
+      </div>
+      <div class="mobile-backdrop"></div>
+
+      <div class="arrow-box"></div>
+      <svg
+        id="arrow"
+        data-name="Warstwa 1"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 353.72 285.21"
+      >
+        <title>Bez nazwy-1</title>
+        <polygon
+          points="4.23 3.32 104.16 142.6 4.23 281.88 349.7 142.6 4.23 3.32"
+          fill="#fff"
+          stroke="#000"
+          stroke-miterlimit="10"
+          stroke-width="3"
+        />
+      </svg>
+
+      <!-- Navigation-big_End -->
+
+      <!-- Home -->
+      <div data-slide="1" class="panel">
+        <div id="layer-1" class="trans-layer"></div>
+        <section id="section-1" class="section">
+          <div class="section-content">
+            <div class="section-content-title"><h1>Home</h1></div>
+            <div class="section-content__description">
+              <h1>Photography</h1>
+              <div class="quote-wrapper">
+                <i class="fa fa-quote-right" aria-hidden="true"></i>
+                <span
+                  >My life is shaped by the urgent need to wander and observe,
+                  and my camera is my passport.</span
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Portraits -->
+      <div data-slide="2" class="panel">
+        <div id="layer-2" class="trans-layer"></div>
+        <section id="section-2" class="section">
+          <div class="section-content">
             <div class="section-content-title"><h1>Portraits</h1></div>
             <div class="tabs-container text-center">
-                <div class="d-flex justify-content-center reload panel-top">
-                   
-                    <ul class="nav">
-                        <li class="nav-item"><a href="#step-1" id="step1-tab" class="nav-link" aria-selected=true data-toggle="tab">Casual</a></li>
-                        
-                        <li class="nav-item"><a href="#step-2" id="step2-tab" class="nav-link" aria-selected=false data-toggle="tab">Drama</a></li> 
-                        
-                        <li class="nav-item"><a href="#step-3" id="step2-tab" class="nav-link" aria-selected=false data-toggle="tab">Event</a></li>
-                        
-                        <div class="hor-panel rounded"></div>
-                    </ul>
-                    
-                </div>
+              <div class="d-flex justify-content-center reload panel-top">
+                <ul class="nav">
+                  <li class="nav-item">
+                    <a
+                      href="#step-1"
+                      id="step1-tab"
+                      class="nav-link"
+                      aria-selected="true"
+                      data-toggle="tab"
+                      >Casual</a
+                    >
+                  </li>
 
+                  <li class="nav-item">
+                    <a
+                      href="#step-2"
+                      id="step2-tab"
+                      class="nav-link"
+                      aria-selected="false"
+                      data-toggle="tab"
+                      >Dramatic</a
+                    >
+                  </li>
 
-                <div class="tab-content">
-                    <div class="tab-pane fade show active" id="step-1" aria-labelledby="step1-tab">
-                        <div class="inner-content tab-content_casual">
-                            
-                            <img class="big" src="./img-photography/casual/bryan_cranston_0095.jpg" alt="zdjecie">
-                            <img class="small" src="./img-photography/casual/portrait5.jpg" alt="zdjecie">
-                            <img class="small" src="./img-photography/casual/Epic-Portraits-Shot-with-an-iPhone-and-a-Big-Mac-59a54f2641195__880.jpg" alt="zdjecie">
-                            <img class="big" src="./img-photography/casual/mw279802.jpg" alt="zdjecie">
-                            <img class="small" src="./img-photography/casual/portrait-102.jpg" alt="zdjecie">
-                            <img class="small" src="./img-photography/casual/Portrait_of_britain-1005x1024.jpg" alt="zdjecie">
-                            
-                            <img class="small" src="./img-photography/casual/622085-636414218663522490-16x9.jpg" alt="zdjecie">
-                            <img class="small" src="./img-photography/casual/5bd3d6e5cfdedfbba97e623a8f36bca7.jpg" alt="zdjecie">
-                            <img class="big" src="./img-photography/casual/pexels-photo-614810.jpeg" alt="zdjecie">
-                            <img class="small" src="./img-photography/casual/239874_253580_0_ © Mojtaba Nobakht, Iran, Commended, Open Competition, Portraits, 2017 Sony World Photography Awards.jpg" alt="zdjecie">
-                            <img class="small" src="./img-photography/casual/cc76306c43450b99dbb0751ef4759e39.jpg" alt="zdjecie">
-                            <img class="small" src="./img-photography/casual/dramtic_lighting_portrait_final_sonePRElg.jpg" alt="zdjecie">
-                            <img class="small" src="./img-photography/casual/dbff4f5baea17016f9837bc6ae4ad553--morgan-freeman-portrait-photo.jpg" alt="zdjecie">
-                            <img class="small" class="big" src="./img-photography/casual/lottavandroomkey-topicself-portraitcopy.jpg" alt="zdjecie">
-                            <img class="small" src="./img-photography/casual/nikola-tesla-photo-portrait.jpg" alt="zdjecie">
-                            
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="step-2" aria-labelledby="step2-tab">
-                        <img class="hero-img" src="./img-photography/drama/drama-hero.jpg" alt="zdjecie" alt="zdjecie">
-                        <div class="inner-content tab-content_drama">
-                            
-                            <!-- first -->
-                            <div class="tab-content_drama__container">
-                                <div class="picture">
-                                    <img src="./img-photography/drama/ITV_Drama_JimCarter_2013-767x1024.jpg" alt="">
-                                </div>
-                                <div class="container-text">
-                                    <div class="container-text__top">
-                                        <span>Success</span>
-                                    </div>
-                                    <div class="container-text__bot">
-                                        <span class="container-text__bot-desc">Some people dream of success, while other people get up every morning and make it happen</span>
-                                        <span class="container-text__bot-author"> ~ Wayne Huizenga</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- second -->
-                            <div class="tab-content_drama__container">
-                                <div class="picture">
-                                    <img src="./img-photography/drama/IMG_4742.jpg" alt="">
-                                </div>
-                                <div class="container-text">
-                                    <div class="container-text__top">
-                                        <span>You</span>
-                                    </div>
-                                    <div class="container-text__bot">
-                                        <span class="container-text__bot-desc">Choose to focus your time, energy and conversation around people who inspire you, support you and help you to grow you into your happiest, strongest, wisest self.</span>
-                                        <span class="container-text__bot-author"> ~ Karen Salmansohn</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- third -->
-                            <div class="tab-content_drama__container">
-                                <div class="picture">
-                                    <img src="./img-photography/drama/sam-barkes-tumblr-o5f0l4msxx1tneg0do1-1280.jpg" alt="">
-                                </div>
-                                <div class="container-text">
-                                    <div class="container-text__top">
-                                        <span>Differences</span>
-                                    </div>
-                                    <div class="container-text__bot">
-                                        <span class="container-text__bot-desc">It's cool to be different and just be who you are and shock people in a good way</span>
-                                        <span class="container-text__bot-author"> ~ Brendon Urie</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="step-3" aria-labelledby="step3-tab">
-                        <div class="inner-content tab-content_event">
-                            <span class="featured-text">FEATURED</span>
-                            <img class="featured" src="./img-photography/event/image-49022523-hd-fitness-wallpapers.jpg" alt="zdjecie">
-                            <img class="small small-firstRow" src="./img-photography/event/austrian-mountain-portrait-photography-9.jpg" alt="zdjecie">
-                            <img class="small small-firstRow" src="./img-photography/event/10578176795_3b414b9920_b.jpg" alt="zdjecie">
-                            <img class="small small-firstRow" src="./img-photography/event/74139782-smiling-woman-sitting-in-car-with-open-door.jpg" alt="zdjecie">
-                            <img class="small" src="./img-photography/event/Event-Blogging-Strategies.jpg" alt="zdjecie">
-                            <img class="small" src="./img-photography/event/TEDx-Organize-hero_859x300px.jpg" alt="zdjecie">
-                            <img class="small" src="./img-photography/event/first-dance-song-ideas-650x488.jpg" alt="zdjecie">
-                        </div>
-                    </div>
+                  <li class="nav-item">
+                    <a
+                      href="#step-3"
+                      id="step2-tab"
+                      class="nav-link"
+                      aria-selected="false"
+                      data-toggle="tab"
+                      >Events</a
+                    >
+                  </li>
+
+                  <div class="hor-panel rounded"></div>
+                </ul>
+              </div>
+
+              <div class="tab-content">
+                <div
+                  class="tab-pane fade show active"
+                  id="step-1"
+                  aria-labelledby="step1-tab"
+                >
+                  <div class="inner-content tab-content_casual">
+                    <img
+                      class="big"
+                      src="./img-photography/casual/bryan_cranston_0095.jpg"
+                      alt="zdjecie"
+                    />
+                    <img
+                      class="small"
+                      src="./img-photography/casual/portrait5.jpg"
+                      alt="zdjecie"
+                    />
+                    <img
+                      class="small"
+                      src="./img-photography/casual/Epic-Portraits-Shot-with-an-iPhone-and-a-Big-Mac-59a54f2641195__880.jpg"
+                      alt="zdjecie"
+                    />
+                    <img
+                      class="big"
+                      src="./img-photography/casual/mw279802.jpg"
+                      alt="zdjecie"
+                    />
+                    <img
+                      class="small"
+                      src="./img-photography/casual/portrait-102.jpg"
+                      alt="zdjecie"
+                    />
+                    <img
+                      class="small"
+                      src="./img-photography/casual/Portrait_of_britain-1005x1024.jpg"
+                      alt="zdjecie"
+                    />
+
+                    <img
+                      class="small"
+                      src="./img-photography/casual/622085-636414218663522490-16x9.jpg"
+                      alt="zdjecie"
+                    />
+                    <img
+                      class="small"
+                      src="./img-photography/casual/5bd3d6e5cfdedfbba97e623a8f36bca7.jpg"
+                      alt="zdjecie"
+                    />
+                    <img
+                      class="big"
+                      src="./img-photography/casual/pexels-photo-614810.jpeg"
+                      alt="zdjecie"
+                    />
+                    <img
+                      class="small"
+                      src="./img-photography/casual/239874_253580_0_ © Mojtaba Nobakht, Iran, Commended, Open Competition, Portraits, 2017 Sony World Photography Awards.jpg"
+                      alt="zdjecie"
+                    />
+                    <img
+                      class="small"
+                      src="./img-photography/casual/cc76306c43450b99dbb0751ef4759e39.jpg"
+                      alt="zdjecie"
+                    />
+                    <img
+                      class="small"
+                      src="./img-photography/casual/dramtic_lighting_portrait_final_sonePRElg.jpg"
+                      alt="zdjecie"
+                    />
+                    <img
+                      class="small"
+                      src="./img-photography/casual/dbff4f5baea17016f9837bc6ae4ad553--morgan-freeman-portrait-photo.jpg"
+                      alt="zdjecie"
+                    />
+                    <img
+                      class="small"
+                      class="big"
+                      src="./img-photography/casual/lottavandroomkey-topicself-portraitcopy.jpg"
+                      alt="zdjecie"
+                    />
+                    <img
+                      class="small"
+                      src="./img-photography/casual/nikola-tesla-photo-portrait.jpg"
+                      alt="zdjecie"
+                    />
+                  </div>
                 </div>
+                <div
+                  class="tab-pane fade"
+                  id="step-2"
+                  aria-labelledby="step2-tab"
+                >
+                  <img
+                    class="hero-img"
+                    src="./img-photography/drama/drama-hero.jpg"
+                    alt="zdjecie"
+                    alt="zdjecie"
+                  />
+                  <div class="inner-content tab-content_drama">
+                    <!-- first -->
+                    <div class="tab-content_drama__container">
+                      <div class="picture">
+                        <img
+                          src="./img-photography/drama/ITV_Drama_JimCarter_2013-767x1024.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="container-text">
+                        <div class="container-text__top">
+                          <span>Dignified</span>
+                        </div>
+                        <div class="container-text__bot">
+                          <span class="container-text__bot-desc"
+                            >Photography is all about secrets. The secrets we
+                            all have and will never tell.</span
+                          >
+                          <span class="container-text__bot-author">
+                            ~ Kim Edwards</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <!-- second -->
+                    <div class="tab-content_drama__container">
+                      <div class="picture">
+                        <img
+                          src="./img-photography/drama/IMG_4742.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="container-text">
+                        <div class="container-text__top">
+                          <span>Stranger</span>
+                        </div>
+                        <div class="container-text__bot">
+                          <span class="container-text__bot-desc"
+                            >My portraits are more about me than they are about
+                            the people I photograph.</span
+                          >
+                          <span class="container-text__bot-author">
+                            ~ Richard Avedon</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <!-- third -->
+                    <div class="tab-content_drama__container">
+                      <div class="picture">
+                        <img
+                          src="./img-photography/drama/sam-barkes-tumblr-o5f0l4msxx1tneg0do1-1280.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="container-text">
+                        <div class="container-text__top">
+                          <span>Hue</span>
+                        </div>
+                        <div class="container-text__bot">
+                          <span class="container-text__bot-desc"
+                            >When you photograph people in color, you photograph
+                            their clothes. But when you photograph people in
+                            Black and white, you photograph their souls!</span
+                          >
+                          <span class="container-text__bot-author">
+                            ~ Ted Grant</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="step-3"
+                  aria-labelledby="step3-tab"
+                >
+                  <div class="inner-content tab-content_event">
+                    <span class="featured-text">WORKOUT</span>
+                    <img
+                      class="featured"
+                      src="./img-photography/event/image-49022523-hd-fitness-wallpapers.jpg"
+                      alt="zdjecie"
+                    />
+                    <img
+                      class="small small-firstRow"
+                      src="./img-photography/event/austrian-mountain-portrait-photography-9.jpg"
+                      alt="zdjecie"
+                    />
+                    <img
+                      class="small small-firstRow"
+                      src="./img-photography/event/10578176795_3b414b9920_b.jpg"
+                      alt="zdjecie"
+                    />
+                    <img
+                      class="small small-firstRow"
+                      src="./img-photography/event/74139782-smiling-woman-sitting-in-car-with-open-door.jpg"
+                      alt="zdjecie"
+                    />
+                    <img
+                      class="small"
+                      src="./img-photography/event/Event-Blogging-Strategies.jpg"
+                      alt="zdjecie"
+                    />
+                    <img
+                      class="small"
+                      src="./img-photography/event/TEDx-Organize-hero_859x300px.jpg"
+                      alt="zdjecie"
+                    />
+                    <img
+                      class="small"
+                      src="./img-photography/event/first-dance-song-ideas-650x488.jpg"
+                      alt="zdjecie"
+                    />
+                  </div>
+                </div>
+              </div>
             </div>
-            
-        </div>
-        
-     
-    </section>
-  </div>
-  
-   <!-- Street & outdoor -->
-  <div data-slide="3" class="panel">
-    <div id="layer-3" class="trans-layer"></div>
-    <section id="section-3" class="section">
-      <div class="section-content">
-        <div class="section-content-title"><h1>Street & Outdoor</h1></div>
-        <div class="horizontalScroll">
-            <div class="block"> <div class="block-bg"> </div> </div>
-            <div class="block"> <div class="block-bg"> </div> </div>
-            <div class="block"> <div class="block-bg"> </div> </div>
-            <div class="block"> <div class="block-bg"> </div> </div>
-            <div class="block"> <div class="block-bg"> </div> </div>
-            <div class="block"> <div class="block-bg"> </div> </div>
-            <div class="block"> <div class="block-bg"> </div> </div>
-            <div class="block"> <div class="block-bg"> more coming <br/>soon </div> </div>
-        </div>
-            
-        
+          </div>
+        </section>
       </div>
-    </section>
-  </div>
-  
-   <!-- Manipulations -->
-  <div data-slide="4" class="panel">
-    <div id="layer-4" class="trans-layer"></div>
-    <section id="section-4" class="section">
-        <div class="section-content">
+
+      <!-- Street & outdoor -->
+      <div data-slide="3" class="panel">
+        <div id="layer-3" class="trans-layer"></div>
+        <section id="section-3" class="section">
+          <div class="section-content">
+            <div class="section-content-title"><h1>Street & Outdoor</h1></div>
+            <div class="horizontalScroll">
+              <div class="block"><div class="block-bg"></div></div>
+              <div class="block"><div class="block-bg"></div></div>
+              <div class="block"><div class="block-bg"></div></div>
+              <div class="block"><div class="block-bg"></div></div>
+              <div class="block"><div class="block-bg"></div></div>
+              <div class="block"><div class="block-bg"></div></div>
+              <div class="block"><div class="block-bg"></div></div>
+              <div class="block">
+                <div class="block-bg last-block">
+                  <i class="fa fa-chevron-circle-left" aria-hidden="true"></i>
+                  <span>&nbsp back</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Manipulations -->
+      <div data-slide="4" class="panel">
+        <div id="layer-4" class="trans-layer"></div>
+        <section id="section-4" class="section">
+          <div class="section-content">
             <div class="section-content-title"><h1>Manipulations</h1></div>
-           
+
             <div class="tabs-container2 text-center w-95">
-                
-                <p class="section-content-desc">When the reality meets different dimension and contains science fiction or abstract visualisations.</p>
+              <p class="section-content-desc">
+                Adobe Photoshop is a software application for image editing and
+                photo retouching. Photoshop offers users the ability to create,
+                enhance, or otherwise edit images, artwork, and illustrations.
+                It is the most widely used software tool for photo editing,
+                image manipulation, and retouching for numerous image and video
+                file formats.
+                <br />
+                Adobe Photoshop is a critical tool for designers, web
+                developers, graphic artists, photographers, and creative
+                professionals. Stand-alone graphics can be created and exported
+                for use within other programs.
+              </p>
 
-                <div class="d-flex justify-content-center">
-                    <ul class="nav bg-light">
-                        <li style="border: 1px solid black;" class="nav-item">
-                            <a href="#step-1b" id="step1-sec4-tab" class="nav-link" aria-selected=true data-toggle="tab">
-                                <img src="./img-photography/beforeAfter/icons/after2.jpg">
-                            </a>
+              <div class="d-flex justify-content-center">
+                <ul class="nav bg-light">
+                  <li style="border: 1px solid black" class="nav-item">
+                    <a
+                      href="#step-1b"
+                      id="step1-sec4-tab"
+                      class="nav-link"
+                      aria-selected="true"
+                      data-toggle="tab"
+                    >
+                      <img
+                        src="./img-photography/beforeAfter/icons/after2.jpg"
+                      />
+                    </a>
+                  </li>
+
+                  <li class="nav-item" style="border: 1px solid black">
+                    <a
+                      href="#step-2b"
+                      id="step2-sec4-tab"
+                      class="nav-link"
+                      aria-selected="false"
+                      data-toggle="tab"
+                    >
+                      <img
+                        src="./img-photography/beforeAfter/icons/after1.jpg"
+                      />
+                    </a>
+                  </li>
+
+                  <li class="nav-item" style="border: 1px solid black">
+                    <a
+                      href="#step-3b"
+                      id="step3-sec4-tab"
+                      class="nav-link"
+                      aria-selected="false"
+                      data-toggle="tab"
+                    >
+                      <img src="./img-photography/beforeAfter/icons/b.jpg" />
+                    </a>
+                  </li>
+
+                  <li class="nav-item" style="border: 1px solid black">
+                    <a
+                      href="#step-4b"
+                      id="step4-sec4-tab"
+                      class="nav-link"
+                      aria-selected="false"
+                      data-toggle="tab"
+                    >
+                      <img src="./img-photography/beforeAfter/icons/b2.jpg" />
+                    </a>
+                  </li>
+
+                  <li class="nav-item" style="border: 1px solid black">
+                    <a
+                      href="#step-5b"
+                      id="step5-sec4-tab"
+                      class="nav-link"
+                      aria-selected="false"
+                      data-toggle="tab"
+                    >
+                      <img src="./img-photography/beforeAfter/icons/b3.jpg" />
+                    </a>
+                  </li>
+
+                  <li class="nav-item" style="border: 1px solid black">
+                    <a
+                      href="#step-6b"
+                      id="step6-sec4-tab"
+                      class="nav-link"
+                      aria-selected="false"
+                      data-toggle="tab"
+                    >
+                      <img src="./img-photography/beforeAfter/icons/b4.jpg" />
+                    </a>
+                  </li>
+
+                  <li class="nav-item" style="border: 1px solid black">
+                    <a
+                      href="#step-7b"
+                      id="step7-sec4-tab"
+                      class="nav-link"
+                      aria-selected="false"
+                      data-toggle="tab"
+                    >
+                      <img src="./img-photography/beforeAfter/icons/b5.jpg" />
+                    </a>
+                  </li>
+
+                  <li class="nav-item" style="border: 1px solid black">
+                    <a
+                      href="#step-8b"
+                      id="step8-sec4-tab"
+                      class="nav-link"
+                      aria-selected="false"
+                      data-toggle="tab"
+                    >
+                      <img src="./img-photography/beforeAfter/icons/b6.jpg" />
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="tab-content2 tab-content">
+                <div
+                  class="tab-pane fade show active"
+                  id="step-1b"
+                  aria-labelledby="step1-sec4-tab"
+                >
+                  <div class="inner-content2">
+                    <h4>" Storks invaded "</h4>
+                    <div class="comp-wrapper">
+                      <ul class="comparison vertical">
+                        <li>
+                          <img
+                            src="./img-photography/beforeAfter/before2.jpg"
+                            alt="Before Image"
+                          />
                         </li>
-                        
-                        <li class="nav-item" style="border: 1px solid black;">
-                            <a href="#step-2b" id="step2-sec4-tab" class="nav-link" aria-selected=false data-toggle="tab">
-                                <img src="./img-photography/beforeAfter/icons/after1.jpg">
-                            </a>
-                        </li> 
-                        
-                        <li class="nav-item" style="border: 1px solid black;">
-                            <a href="#step-3b" id="step3-sec4-tab" class="nav-link" aria-selected=false data-toggle="tab">
-                                <img src="./img-photography/beforeAfter/icons/b.jpg">
-                            </a>
+                        <li>
+                          <img
+                            src="./img-photography/beforeAfter/after2.jpg"
+                            alt="After Image"
+                          />
                         </li>
-                        
-                        <li class="nav-item" style="border: 1px solid black;">
-                            <a href="#step-4b" id="step4-sec4-tab" class="nav-link" aria-selected=false data-toggle="tab">
-                                <img src="./img-photography/beforeAfter/icons/b2.jpg">
-                            </a>
-                        </li>
-                        
-                        <li class="nav-item" style="border: 1px solid black;">
-                            <a href="#step-5b" id="step5-sec4-tab" class="nav-link" aria-selected=false data-toggle="tab">
-                                <img src="./img-photography/beforeAfter/icons/b3.jpg">
-                            </a>
-                        </li>
-                        
-                        <li class="nav-item" style="border: 1px solid black;">
-                            <a href="#step-6b" id="step6-sec4-tab" class="nav-link" aria-selected=false data-toggle="tab">
-                                <img src="./img-photography/beforeAfter/icons/b4.jpg">
-                            </a>
-                        </li>
-                        
-                        <li class="nav-item" style="border: 1px solid black;">
-                            <a href="#step-7b" id="step7-sec4-tab" class="nav-link" aria-selected=false data-toggle="tab">
-                                <img src="./img-photography/beforeAfter/icons/b5.jpg">
-                            </a>
-                        </li>
-                        
-                        <li class="nav-item" style="border: 1px solid black;">
-                            <a href="#step-8b" id="step8-sec4-tab" class="nav-link" aria-selected=false data-toggle="tab">
-                                <img src="./img-photography/beforeAfter/icons/b6.jpg">
-                            </a>
-                        </li>
-                        
-                   
-                        
-                    </ul>
+                      </ul>
+                    </div>
+                  </div>
                 </div>
 
-                <div class="tab-content2 tab-content">
-                  
-                    <div class="tab-pane fade show active" id="step-1b" aria-labelledby="step1-sec4-tab">
-                        <div class="inner-content2">
-                            <h4>" Storks invaded "</h4>
-                            <div class="comp-wrapper">
-                                <ul class="comparison vertical">
-                                    <li><img src="./img-photography/beforeAfter/before2.jpg"  alt="Before Image"></li>
-                                    <li><img src="./img-photography/beforeAfter/after2.jpg"  alt="After Image"></li>
-                                </ul>
-                            </div>
-                        </div>
+                <div
+                  class="tab-pane fade"
+                  id="step-2b"
+                  aria-labelledby="step2-sec4-tab"
+                >
+                  <div class="inner-content2">
+                    <h4>" The quick brown fox jumps over the lazy dog "</h4>
+                    <div class="comp-wrapper">
+                      <ul class="comparison vertical">
+                        <li>
+                          <img
+                            src="./img-photography/beforeAfter/before1.jpg"
+                            alt="Before Image"
+                          />
+                        </li>
+                        <li>
+                          <img
+                            src="./img-photography/beforeAfter/after1.jpg"
+                            alt="After Image"
+                          />
+                        </li>
+                      </ul>
                     </div>
-                    
-                    <div class="tab-pane fade" id="step-2b" aria-labelledby="step2-sec4-tab">
-                        <div class="inner-content2">
-                            <h4>" The quick brown fox jumps over the lazy dog "</h4>
-                            <div class="comp-wrapper">
-                                <ul class="comparison vertical">
-                                    <li><img src="./img-photography/beforeAfter/before1.jpg"  alt="Before Image"></li>
-                                    <li><img src="./img-photography/beforeAfter/after1.jpg"  alt="After Image"></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="tab-pane fade" id="step-3b" aria-labelledby="step3-sec4-tab">
-                        <div class="inner-content2">
-                            <h4>" Concrete Jungle "</h4>
-                            <div class="comp-wrapper">
-                                <ul class="comparison vertical">
-                                    <li><img src="./img-photography/beforeAfter/a.jpg"  alt="Before Image"></li>
-                                    <li><img src="./img-photography/beforeAfter/b.jpg"  alt="After Image"></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="tab-pane fade" id="step-4b" aria-labelledby="step4-sec4-tab">
-                        <div class="inner-content2">
-                            <h4>" The only way to get rid of thinking "</h4>
-                            <div class="comp-wrapper">
-                                <ul class="comparison vertical">
-                                    <li><img src="./img-photography/beforeAfter/a2.jpg"  alt="Before Image"></li>
-                                    <li><img src="./img-photography/beforeAfter/b2.jpg"  alt="After Image"></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="tab-pane fade" id="step-5b" aria-labelledby="step5-sec4-tab">
-                        <div class="inner-content2">
-                            <h4>" Various knowledge "</h4>
-                            <div class="comp-wrapper">
-                                <ul class="comparison vertical">
-                                    <li><img src="./img-photography/beforeAfter/a3.jpg"  alt="Before Image"></li>
-                                    <li><img src="./img-photography/beforeAfter/b3.jpg"  alt="After Image"></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="tab-pane fade" id="step-6b" aria-labelledby="step6-sec4-tab">
-                        <div class="inner-content2">
-                            <h4>" The sacred beauty "</h4>
-                            <div class="comp-wrapper">
-                                <ul class="comparison vertical">
-                                    <li><img src="./img-photography/beforeAfter/a4.jpg"  alt="Before Image"></li>
-                                    <li><img src="./img-photography/beforeAfter/b4.jpg"  alt="After Image"></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="tab-pane fade" id="step-7b" aria-labelledby="step7-sec4-tab">
-                        <div class="inner-content2">
-                            <h4>" You have been judged "</h4>
-                            <div class="comp-wrapper">
-                                <ul class="comparison vertical">
-                                    <li><img src="./img-photography/beforeAfter/a5.jpg"  alt="Before Image"></li>
-                                    <li><img src="./img-photography/beforeAfter/b5.jpg"  alt="After Image"></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="tab-pane fade" id="step-8b" aria-labelledby="step8-sec4-tab">
-                        <div class="inner-content2">
-                            <h4>" A local forest witch "</h4>
-                            <div class="comp-wrapper">
-                                <ul class="comparison vertical">
-                                    <li><img src="./img-photography/beforeAfter/b6.jpg"  alt="Before Image"></li>
-                                    <li><img src="./img-photography/beforeAfter/a6.jpg"  alt="After Image"></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    
+                  </div>
                 </div>
+
+                <div
+                  class="tab-pane fade"
+                  id="step-3b"
+                  aria-labelledby="step3-sec4-tab"
+                >
+                  <div class="inner-content2">
+                    <h4>" Concrete Jungle "</h4>
+                    <div class="comp-wrapper">
+                      <ul class="comparison vertical">
+                        <li>
+                          <img
+                            src="./img-photography/beforeAfter/a.jpg"
+                            alt="Before Image"
+                          />
+                        </li>
+                        <li>
+                          <img
+                            src="./img-photography/beforeAfter/b.jpg"
+                            alt="After Image"
+                          />
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="tab-pane fade"
+                  id="step-4b"
+                  aria-labelledby="step4-sec4-tab"
+                >
+                  <div class="inner-content2">
+                    <h4>" Love is friendship that has caught fire "</h4>
+                    <div class="comp-wrapper">
+                      <ul class="comparison vertical">
+                        <li>
+                          <img
+                            src="./img-photography/beforeAfter/a2.jpg"
+                            alt="Before Image"
+                          />
+                        </li>
+                        <li>
+                          <img
+                            src="./img-photography/beforeAfter/b2.jpg"
+                            alt="After Image"
+                          />
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="tab-pane fade"
+                  id="step-5b"
+                  aria-labelledby="step5-sec4-tab"
+                >
+                  <div class="inner-content2">
+                    <h4>" Cirilla Fiona Elen Riannon "</h4>
+                    <div class="comp-wrapper">
+                      <ul class="comparison vertical">
+                        <li>
+                          <img
+                            src="./img-photography/beforeAfter/a3.jpg"
+                            alt="Before Image"
+                          />
+                        </li>
+                        <li>
+                          <img
+                            src="./img-photography/beforeAfter/b3.jpg"
+                            alt="After Image"
+                          />
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="tab-pane fade"
+                  id="step-6b"
+                  aria-labelledby="step6-sec4-tab"
+                >
+                  <div class="inner-content2">
+                    <h4>" Time is the fire in which we burn "</h4>
+                    <div class="comp-wrapper">
+                      <ul class="comparison vertical">
+                        <li>
+                          <img
+                            src="./img-photography/beforeAfter/a4.jpg"
+                            alt="Before Image"
+                          />
+                        </li>
+                        <li>
+                          <img
+                            src="./img-photography/beforeAfter/b4.jpg"
+                            alt="After Image"
+                          />
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="tab-pane fade"
+                  id="step-7b"
+                  aria-labelledby="step7-sec4-tab"
+                >
+                  <div class="inner-content2">
+                    <h4>" Never give a sword to a man who can't dance "</h4>
+                    <div class="comp-wrapper">
+                      <ul class="comparison vertical">
+                        <li>
+                          <img
+                            src="./img-photography/beforeAfter/a5.jpg"
+                            alt="Before Image"
+                          />
+                        </li>
+                        <li>
+                          <img
+                            src="./img-photography/beforeAfter/b5.jpg"
+                            alt="After Image"
+                          />
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="tab-pane fade"
+                  id="step-8b"
+                  aria-labelledby="step8-sec4-tab"
+                >
+                  <div class="inner-content2">
+                    <h4>" A local forest witch "</h4>
+                    <div class="comp-wrapper">
+                      <ul class="comparison vertical">
+                        <li>
+                          <img
+                            src="./img-photography/beforeAfter/b6.jpg"
+                            alt="Before Image"
+                          />
+                        </li>
+                        <li>
+                          <img
+                            src="./img-photography/beforeAfter/a6.jpg"
+                            alt="After Image"
+                          />
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
+        </section>
       </div>
-    </section>
-  </div>
-  
-  <!-- Equipment -->
-  <div data-slide="5" class="panel">
-    <div id="layer-5" class="trans-layer"></div>
-    <section id="section-5" class="section">
-      <div class="section-content">
-        <div class="section-content-title"><h1>Equipment</h1></div>
-      
-       <div class="section-content__section-1">
-           <p class="parallax-p">Hi, I do photography for fun, it's just a hobby to me. I'd like to share the equipment I use.</p>
-            <div class="pimg pimg1">
+
+      <!-- Equipment -->
+      <div data-slide="5" class="panel">
+        <div id="layer-5" class="trans-layer"></div>
+        <section id="section-5" class="section">
+          <div class="section-content">
+            <div class="section-content-title"><h1>Equipment</h1></div>
+
+            <!-- TOP INFORMATION -->
+            <div id="tipsRules">
+              <h2>General tips and rules a beginner should follow</h2>
+              <div>
+                <ul>
+                  <h4>Go out of your comfort zone</h4>
+                  <li>Don't bother yourself what others think about you.</li>
+                  <li>Think positively and creatively in-field.</li>
+                  <li>Spend some time on planning the shoot.</li>
+                </ul>
+
+                <ul>
+                  <h4>Focus on surroundings not only on main event</h4>
+                  <li>
+                    Sometimes side things happening around might be more
+                    interesting.
+                  </li>
+                </ul>
+
+                <ul>
+                  <h4>No excuses</h4>
+                  <li>
+                    Never say 'next time', because the weather, lightning,
+                    people, atmosphere can happen only once and you can miss
+                    that
+                  </li>
+                </ul>
+
+                <ul>
+                  <h4>
+                    Sometimes the ugliness tells more of a story than the beauty
+                  </h4>
+                  <li>
+                    Some certain scenes may be more touching and gripping.
+                  </li>
+                  <li>
+                    Those are the moments when you are expanding your creative
+                    horizons.
+                  </li>
+                  <li>Show a different side of places that you visit.</li>
+                </ul>
+                <ul>
+                  <h4>Be skeptical to well known places</h4>
+                  <li>
+                    Sometimes following local advices about what to see may vary
+                    and might not be so interesting.
+                  </li>
+                  <li>
+                    Well known places have special values but in majority in
+                    general.
+                  </li>
+                  <li>
+                    Don't look for places like "most beautiful places on Earth",
+                    or "Best places to visit in Europe".
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="section-content__section-1">
+              <p class="parallax-p">
+                Finding the best photography equipment can be overwhelming. But
+                it doesn’t have to be. Scroll down to see what I recommend:
+              </p>
+              <div class="pimg pimg1">
                 <div class="ptext">
-                        <span>
-                           In the wardrobe
-                        </span>
+                  <span> In the wardrobe </span>
                 </div>
+              </div>
             </div>
-       </div> 
-       
-       <div class="section-content__section-2">
-           <h2>Camera</h2>
-           <p class="parallax-p">Canon 80d - a camera for mid level. I love it. For those who have some budget, but aren't thinking to buy the best stuff. For practice - it's the best. </p>
-           <div class="pimg pimg2">
-               <div class="ptext">
-                   <span>
-                       A weapon
-                   </span>
-               </div>
+
+            <div class="section-content__section-2">
+              <h2>Camera</h2>
+              <p class="parallax-p">
+                It's worth noting that a camera's overall performance can vary
+                drastically depending on the lens you use. Your lens influences
+                the amount of light entering the camera, an image's depth of
+                field, autofocus behavior, and stabilization performance, and
+                that's without mentioning the physical aspects of your lens,
+                which can affect the camera's portability. As a general rule,
+                it's better to invest in a less expensive camera body and
+                higher-quality lenses than to invest in an expensive camera body
+                and cheap lenses.
+              </p>
+              <div class="pimg pimg2">
+                <div class="ptext">
+                  <span> A weapon </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="section-content__section-3">
+              <h2>Tripod</h2>
+              <p class="parallax-p">
+                Highly recommended by every photographer. For still objects like
+                landscapes or portraits. Also used to take long exposures
+                (remember to turn off the stabilisation option).
+              </p>
+              <div class="pimg pimg3">
+                <div class="ptext">
+                  <span> Extra hands </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="section-content__section-4">
+              <h2>Speedlight</h2>
+              <p class="parallax-p">
+                Flash - It gives you totally a different point of view. It's
+                another level in taking pictures. When you buy a speedlite, you
+                start to treat photography a little bit more serious. You start
+                to think creatively, more forward, more powerful. And with an
+                umbrella you are invincible.
+              </p>
+              <div class="pimg pimg4">
+                <div class="ptext">
+                  <span> Flashing light </span>
+                </div>
+              </div>
+            </div>
+
+            <!-- LINKS -->
+            <div class="section-5__flickr">
+              <a href="https://www.flickr.com/" target="_blank"
+                ><img src="./img-photography/flickr.png" alt="flickr"
+              /></a>
+              <a href="https://www.flickr.com/" target="_blank"
+                >Thanks! You can now visit my social media under this link.</a
+              >
+            </div>
           </div>
-       </div>  
-       
-       <div class="section-content__section-3">
-           <h2>Tripod</h2>
-           <p class="parallax-p">Highly recommended by every photographer. For still objects like landscapes or portraits. Also for longer exposures - you will need that unless you are able to hold still the camera for... n seconds. Remember to turn off the stabilisation option.</p>
-           <div class="pimg pimg3">
-               <div class="ptext">
-                   <span>
-                       Extra help
-                   </span>
-               </div>
-          </div>
-          
-       </div>  
-       
-       <div class="section-content__section-4">
-           <h2>Speedlight</h2>
-           <p class="parallax-p">Flash - It gives you totally a different point of view. It's another level in taking pictures. When you buy a speedlite, you start to treat photography a little bit more serious. You start to think creatively, more forward, more powerful. And with an umbrella you are invincible.</p>
-           <div class="pimg pimg4">
-               <div class="ptext">
-                   <span>
-                       Flashing light
-                   </span>
-               </div>
-          </div>
-          
-       </div> 
-       
-       <div id="tipsRules">
-           <h2>General tips &amp; rules a beginner should follow</h2>
-           <div>
-                  <ul>
-                      <h4>Go out of your comfort zone</h4>
-                      <li>Don't bother yourself what others think about you. </li>
-                      <li>Think positively and creatively in-field.</li>
-                      <li>Spend some time on planning the shoot.</li>
-                  </ul>
-                  
-                  <ul>
-                      <h4>Focus on surroundings not only on main event</h4>
-                      <li>Sometimes side things happening around might be more interesting.</li>
-                  </ul>
-                  
-                  <ul>
-                      <h4>No excuses</h4>
-                      <li>Never say 'next time', because next time there won't be the same weather, lightning, certain people, atmosphere, and all other things that will not come second time.</li>
-                  </ul>
-                  
-                  <ul>
-                      <h4>Sometimes the ugliness tells more of a story than the beauty</h4>
-                      <li>Some certain scenes may be more touching and gripping.</li>
-                      <li>Those are the moments when you are expanding your creative horizons.</li>
-                      <li>Show a different side of places that you visit.</li>
-                  </ul>
-                 <ul>
-                     <h4>Be skeptical to well known places</h4>
-                     <li>Sometimes following local advices about what to see may vary and might not be so interesting.</li>
-                     <li>Well known places have special values but in majority in general.</li>
-                     <li>Don't look for places like "most beautiful places on Earth", or "Best places to visit in Europe".</li>
-                 </ul>
-          
-            
-           </div>
-       </div>
-       
-       
-       
-       <div class="section-5__flickr">
-           <a href="https://www.flickr.com/photos/mikeklauza/" target="_blank"><img src="./img-photography/flickr.png" alt="flickr" /></a>
-           <a href="https://www.flickr.com/photos/mikeklauza/" target="_blank">Check my creativity at Flickr</a>
-       </div>
-       
-       
-       
+        </section>
       </div>
-    </section>
-  </div>
-  
-  
-  
-</div>
-	
+    </div>
 
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 
+    <!-- <script src="javaScript-photography.js" type="application/javascript" language="javascript"> </script> -->
+    <!-- <script src="./dist/main.js"></script> -->
+    <!-- <script src="jquery-image-comparison.js"></script> -->
 
-
-
-
-
-<script src="https://code.jquery.com/jquery-3.3.1.min.js"> </script>
-
-<!-- <script src="javaScript-photography.js" type="application/javascript" language="javascript"> </script> -->
-<!-- <script src="./dist/main.js"></script> -->
-<!-- <script src="jquery-image-comparison.js"></script> -->
-
-
-<!-- tabs -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-
-
-
-</body>
+    <!-- tabs -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
