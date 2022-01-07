@@ -30,6 +30,16 @@
       transform: rotateZ(-20deg) scale(1.5);
       font-family: Oswald, sans-serif;
 
+      .quote-wrapper {
+        max-width: 400px;
+
+        i {
+          color: #c7c3c0;
+        }
+        span {
+          font-size: 0.8em;
+        }
+      }
       h1 {
         font-size: 2em;
         text-transform: uppercase;
@@ -39,26 +49,28 @@
         letter-spacing: 11px;
         font-weight: 900;
 
-        &::after,
-        &::before {
-          content: '';
-          display: block;
-          height: 30px;
-          width: 160px;
-          position: absolute;
-          bottom: -42px;
-          left: 2px;
-        }
-        &::before {
-          bottom: -38px;
-          left: 0px;
-          background: rgba(0, 0, 0, 0.25);
-        }
-        &::after {
-          bottom: -44px;
-          left: 4px;
-          background: rgba(0, 0, 0, 0.25);
-        }
+        // Rectangles
+
+        // &::after,
+        // &::before {
+        //   content: '';
+        //   display: block;
+        //   height: 30px;
+        //   width: 160px;
+        //   position: absolute;
+        //   bottom: -42px;
+        //   left: 2px;
+        // }
+        // &::before {
+        //   bottom: -38px;
+        //   left: 0px;
+        //   background: rgba(0, 0, 0, 0.25);
+        // }
+        // &::after {
+        //   bottom: -44px;
+        //   left: 4px;
+        //   background: rgba(0, 0, 0, 0.25);
+        // }
       }
       h3,
       h4 {
