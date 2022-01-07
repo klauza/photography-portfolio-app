@@ -1,54 +1,53 @@
 /* --------------------- SECTION-3 --------------------- */
-#section-3{
-    background: #343434;
-    font-size: 3em;
+#section-3 {
+  background: #343434;
+  font-size: 3em;
 
-    .section-content{
-        background: #2E2E2E;
+  .section-content {
+    background: #2e2e2e;
 
-        .horizontalScroll{
-            width: 100vh;
-            height: 100vw;
-            overflow-y: scrol;
-            overflow-x: hidden;
-            background: #2E2E2E;
+    .horizontalScroll {
+      width: 100vh;
+      height: 100vw;
+      overflow-y: scrol;
+      overflow-x: hidden;
+      background: #2e2e2e;
 
-            transform-origin: right top;
-            transform: rotate(-90deg) translate3d(0, -100vh, 0);
+      transform-origin: right top;
+      transform: rotate(-90deg) translate3d(0, -100vh, 0);
 
-            padding-top: 325px;
+      padding-top: 325px;
 
-            .block{
-                transform-origin: left top;
-                transform: rotate(90deg) translate3d(25vw, -100vh, 0) skew(-15deg);
-                margin-top: -50%;
-                display: block;
-                width: 50%;
-                height: 100vh;
-                overflow: hidden;
+      .block {
+        transform-origin: left top;
+        transform: rotate(90deg) translate3d(25vw, -100vh, 0) skew(-15deg);
+        margin-top: -50%;
+        display: block;
+        width: 50%;
+        height: 100vh;
+        overflow: hidden;
 
-                &-bg{
-                    transform: skew(15deg) scale(1.5);
-                
-                    width: 100%;
-                    height: 100%;
-                    transition: all 0.3s;
-                    opacity: 0.65;
+        &-bg {
+          transform: skew(15deg) scale(1.5);
 
-                    &:hover{
-                        opacity: 1;
-                        transform: skew(15deg) scale(1.625);
-                    }
-                }
-            }
+          width: 100%;
+          height: 100%;
+          transition: all 0.3s;
+          opacity: 0.65;
+
+          &:hover {
+            opacity: 1;
+            transform: skew(15deg) scale(1.625);
+          }
         }
+      }
     }
+  }
 }
 
-
 @for $i from 1 through 7 {
-  .horizontalScroll .block:nth-child(#{$i}) .block-bg{
-    background: url('./img-photography/outdoor/outdoor'+$i+'.jpg');
+  .horizontalScroll .block:nth-child(#{$i}) .block-bg {
+    background: url('./img-photography/outdoor/outdoor' + $i + '.jpg');
     background-size: cover;
     background-position-x: 50%;
     background-position-y: 50%;
@@ -56,19 +55,20 @@
   }
 }
 
-.horizontalScroll .block:nth-child(8) .block-bg{
-    background: rgba(0, 0, 0, 0.26);
-    background-size: cover;
-    background-repeat: no-repeat;
-    text-align: center;
-    font-size: 46px;
-    display: grid;
-    place-items: center;
-
-    color: white;
+.horizontalScroll .block:nth-child(8) .block-bg {
+  background: rgba(0, 0, 0, 0.26);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  cursor: pointer;
 }
-.horizontalScroll .block:nth-child(6) .block-bg{
-    background-position-y: -50px;
-
+.horizontalScroll .block:nth-child(6) .block-bg {
+  background-position-y: -50px;
 }
 
+.last-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 46px;
+}

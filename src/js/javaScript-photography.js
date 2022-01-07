@@ -21,6 +21,12 @@
     if (e.target.closest('.backDiv__github')) {
       $('.modal-wrapper').toggleClass('show-information');
     }
+
+    if (e.target.closest('.last-block')) {
+      $('body, html, *').animate({
+        scrollTop: 0,
+      });
+    }
   });
 
   // ===============================================================================
