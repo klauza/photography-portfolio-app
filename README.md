@@ -5,6 +5,8 @@ This project illustrates the photographer's portfolio showcase by displaying his
 
 website: [link](https://photography-portfolio-app.netlify.app/)
 
+<img src="https://user-images.githubusercontent.com/43997053/148531578-0e3515f4-c427-421f-be2f-1f02f857de30.PNG" width="500">
+
 <br/>
 
 # Technical
