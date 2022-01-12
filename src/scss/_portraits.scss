@@ -100,6 +100,7 @@
       object-fit: cover;
       object-position: top center;
       padding: 5px;
+      transition: transform 250ms ease;
     }
 
     &_casual {
@@ -119,14 +120,28 @@
         grid-row: span 1;
       }
 
-      img:nth-of-type(2),
-      img:nth-of-type(3),
-      img:nth-of-type(5),
-      img:nth-of-type(6),
-      img:nth-of-type(7),
-      img:nth-of-type(11),
-      img:nth-of-type(12),
-      img:nth-of-type(15) {
+      .big,
+      .small {
+        overflow: hidden;
+        transition: transform 250ms ease;
+
+        &:hover {
+          transition: transform 250ms ease;
+          img {
+            transform: scale(1.1);
+            transition: transform 250ms ease;
+          }
+        }
+      }
+
+      div:nth-of-type(2),
+      div:nth-of-type(3),
+      div:nth-of-type(5),
+      div:nth-of-type(6),
+      div:nth-of-type(7),
+      div:nth-of-type(11),
+      div:nth-of-type(12),
+      div:nth-of-type(15) {
         transform: translateY(50%);
 
         @include mediaQ {
@@ -134,7 +149,7 @@
         }
       }
 
-      img:nth-of-type(9) {
+      div:nth-of-type(9) {
         transform: translateY(25%);
 
         @include mediaQ {
