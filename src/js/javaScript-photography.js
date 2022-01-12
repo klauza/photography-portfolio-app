@@ -39,6 +39,15 @@
 
     $('.section-content-title').css('display', 'none');
 
+    // const showMenuOnStart = () => {
+    //   $('.nav-dots').css({
+    //     transform: 'translateX(0) translateY(-50%)',
+    //   });
+    //   $('#arrow').css('animation', 'arrow-anim-forward 0.5s ease forwards');
+    //   $('.arrow-box').css('animation', 'arrow-box-forward 0.5s ease forwards');
+    //   $('#arrow polygon').css({ fill: '#fff' });
+    // }
+
     const showMenu = () => {
       $('.nav-dots').css({
         transform: 'translateX(0) translateY(-50%)',
@@ -46,14 +55,16 @@
       $('#arrow').css('animation', 'arrow-anim-forward 0.5s ease forwards');
       $('.arrow-box').css('animation', 'arrow-box-forward 0.5s ease forwards');
       $('#arrow polygon').css({ fill: '#fff' });
+      $('#arrow').toggleClass('menu-on');
     };
 
     $('body').on('mousemove', function (event) {
-      if (event.pageX < 100) {
+      if (event.pageX < 25 && !$('#arrow').hasClass('menu-on')) {
         showMenu();
       }
     });
     showMenu();
+    // showMenuOnStart();
 
     // ===============================================================================
     // HIDING MENU
@@ -62,21 +73,38 @@
       $('#arrow').css('animation', 'arrow-anim-back 0.5s ease forwards');
       $('.arrow-box').css('animation', 'arrow-box-back 0.5s ease forwards');
       $('#arrow polygon').css({ fill: 'rgba(255, 255, 255, 0.3)' });
+      $('#arrow').toggleClass('menu-on');
     };
 
-    $('#arrow').on('click', function (e) {
-      hideMenu();
-    });
+    // $('#arrow').on('click', function (e) {
+    //   hideMenu();
+    // });
 
     $('*').scroll(function () {
       var scrollbarLocation = $(this).scrollTop();
 
       //console.log(scrollbarLocation)
-      if (scrollbarLocation > 350) {
+      if (scrollbarLocation > 350 && $('#arrow').hasClass('menu-on')) {
         hideMenu();
       }
     });
     // ===============================================================================
+
+    // toggle menu on click
+    $('#arrow').on('click', function (e) {
+      let btn = this;
+
+      // show if hidden
+      // if(btn.classList.contains('menu-show')){
+      //   console.log('show');
+      // }
+      // hide if showing
+      if (btn.classList.contains('menu-on')) {
+        hideMenu();
+      } else {
+        showMenu();
+      }
+    });
 
     // Removing black screen on page load
     // const backgroundDel = () => {
@@ -120,7 +148,7 @@
 
   $('.page-slider').each(function () {
     var $slider = $(this);
-    console.log($slider);
+    // console.log($slider);
     //var numberOfSlides = $slider.find('.panel').length;
 
     $slider.find('.panel:eq(0)').addClass('_active'); // first dot is active after page loads
