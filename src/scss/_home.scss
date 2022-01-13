@@ -94,6 +94,24 @@
         left: 50%;
         transform: rotateZ(-20deg) scale(0.95) translate(-50%, -50%);
       }
+
+      @media (max-width: 420px) {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        .title-wrapper {
+          h1 {
+            margin: -5px 0 0;
+          }
+          span,
+          h1 {
+            font-size: 10vw;
+          }
+        }
+        .quote-wrapper span {
+          font-size: 4vw;
+        }
+      }
     }
   }
 }

@@ -54,6 +54,10 @@
   padding: 20px 100px;
   text-align: center;
   height: auto;
+
+  @media (max-width: 540px) {
+    padding: 10px 2.5px;
+  }
 }
 .pimg {
   max-width: 100%;

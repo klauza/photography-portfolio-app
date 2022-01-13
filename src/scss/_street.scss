@@ -9,7 +9,8 @@
     .horizontalScroll {
       width: 100vh;
       height: 100vw;
-      overflow-y: scrol;
+      overflow-y: scroll !important;
+      -webkit-overflow-scrolling: touch;
       overflow-x: hidden;
       background: #2e2e2e;
 
@@ -17,7 +18,6 @@
       transform: rotate(-90deg) translate3d(0, -100vh, 0);
 
       padding-top: 325px;
-
       .block {
         transform-origin: left top;
         transform: rotate(90deg) translate3d(25vw, -100vh, 0) skew(-15deg);

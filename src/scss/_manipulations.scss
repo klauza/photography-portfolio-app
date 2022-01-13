@@ -22,7 +22,8 @@
       color: #c7c3c0;
       font-family: Verdana, Geneva, Tahoma, sans-serif;
       @include mediaQ {
-        display: none;
+        padding-top: 50px;
+        // display: none;
       }
     }
   }
